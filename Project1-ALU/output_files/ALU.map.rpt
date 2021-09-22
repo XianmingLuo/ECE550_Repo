@@ -1,0 +1,675 @@
+Analysis & Synthesis report for ALU
+Wed Sep 22 19:17:28 2021
+Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Port Connectivity Checks: "mux_2to1_32b:mux_2to1_result"
+ 10. Port Connectivity Checks: "mux_4to1_32b:mux_4to1_bottom"
+ 11. Port Connectivity Checks: "mux_4to1_32b:mux_4to1_top|mux_2to1_32b:mux_2to1_result"
+ 12. Port Connectivity Checks: "mux_4to1_32b:mux_4to1_top|mux_2to1_32b:mux_2to1_bottom"
+ 13. Port Connectivity Checks: "mux_4to1_32b:mux_4to1_top|mux_2to1_32b:mux_2to1_top"
+ 14. Port Connectivity Checks: "mux_4to1_32b:mux_4to1_top"
+ 15. Post-Synthesis Netlist Statistics for Top Partition
+ 16. Elapsed Time Per Partition
+ 17. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Wed Sep 22 19:17:28 2021       ;
+; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
+; Revision Name                      ; ALU                                         ;
+; Top-level Entity Name              ; mux_8to1_32b                                ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 5                                           ;
+;     Total combinational functions  ; 5                                           ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 291                                         ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE115F29C7      ;                    ;
+; Top-level entity name                                                      ; mux_8to1_32b       ; ALU                ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 2           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                          ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                            ; Library ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------+---------+
+; mux_8to1_32b.v                   ; yes             ; User Verilog HDL File  ; C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v ;         ;
+; mux_4to1_32b.v                   ; yes             ; User Verilog HDL File  ; C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_4to1_32b.v ;         ;
+; mux_2to1_32b.v                   ; yes             ; User Verilog HDL File  ; C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2to1_32b.v ;         ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------+---------+
+
+
++------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                ;
++---------------------------------------------+--------------+
+; Resource                                    ; Usage        ;
++---------------------------------------------+--------------+
+; Estimated Total logic elements              ; 5            ;
+;                                             ;              ;
+; Total combinational functions               ; 5            ;
+; Logic element usage by number of LUT inputs ;              ;
+;     -- 4 input functions                    ; 4            ;
+;     -- 3 input functions                    ; 1            ;
+;     -- <=2 input functions                  ; 0            ;
+;                                             ;              ;
+; Logic elements by mode                      ;              ;
+;     -- normal mode                          ; 5            ;
+;     -- arithmetic mode                      ; 0            ;
+;                                             ;              ;
+; Total registers                             ; 0            ;
+;     -- Dedicated logic registers            ; 0            ;
+;     -- I/O registers                        ; 0            ;
+;                                             ;              ;
+; I/O pins                                    ; 291          ;
+;                                             ;              ;
+; Embedded Multiplier 9-bit elements          ; 0            ;
+;                                             ;              ;
+; Maximum fan-out node                        ; sel[0]~input ;
+; Maximum fan-out                             ; 3            ;
+; Total fan-out                               ; 311          ;
+; Average fan-out                             ; 0.53         ;
++---------------------------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                   ;
++--------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------+--------------+--------------+
+; Compilation Hierarchy Node           ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                  ; Entity Name  ; Library Name ;
++--------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------+--------------+--------------+
+; |mux_8to1_32b                        ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 291  ; 0            ; |mux_8to1_32b                                                        ; mux_8to1_32b ; work         ;
+;    |mux_4to1_32b:mux_4to1_top|       ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mux_8to1_32b|mux_4to1_32b:mux_4to1_top                              ; mux_4to1_32b ; work         ;
+;       |mux_2to1_32b:mux_2to1_result| ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mux_8to1_32b|mux_4to1_32b:mux_4to1_top|mux_2to1_32b:mux_2to1_result ; mux_2to1_32b ; work         ;
++--------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------+--------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mux_2to1_32b:mux_2to1_result"                                                                                                                ;
++------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                       ;
++------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; in0  ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "in0[31..1]" will be connected to GND. ;
+; in1  ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "in1[31..1]" will be connected to GND. ;
++------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mux_4to1_32b:mux_4to1_bottom"                                                                                            ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                  ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+; out  ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (1 bits) it drives; bit(s) "out[31..1]" have no fanouts ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mux_4to1_32b:mux_4to1_top|mux_2to1_32b:mux_2to1_result"                                                                                      ;
++------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                       ;
++------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; in0  ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "in0[31..1]" will be connected to GND. ;
+; in1  ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "in1[31..1]" will be connected to GND. ;
++------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mux_4to1_32b:mux_4to1_top|mux_2to1_32b:mux_2to1_bottom"                                                                  ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                  ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+; out  ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (1 bits) it drives; bit(s) "out[31..1]" have no fanouts ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mux_4to1_32b:mux_4to1_top|mux_2to1_32b:mux_2to1_top"                                                                     ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                  ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+; out  ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (1 bits) it drives; bit(s) "out[31..1]" have no fanouts ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mux_4to1_32b:mux_4to1_top"                                                                                               ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                  ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+; out  ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (1 bits) it drives; bit(s) "out[31..1]" have no fanouts ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 291                         ;
+; cycloneiii_lcell_comb ; 6                           ;
+;     normal            ; 6                           ;
+;         0 data inputs ; 1                           ;
+;         3 data inputs ; 1                           ;
+;         4 data inputs ; 4                           ;
+;                       ;                             ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 2.47                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+    Info: Processing started: Wed Sep 22 19:17:14 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file barrel_shifter_tb.v
+    Info (12023): Found entity 1: barrel_shifter_tb File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/barrel_shifter_tb.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file bitwise_or_32b_tb.v
+    Info (12023): Found entity 1: bitwise_or_32b_tb File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/bitwise_or_32b_tb.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file bitwise_or_32b.v
+    Info (12023): Found entity 1: bitwise_or_32b File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/bitwise_or_32b.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file bitwise_and_32b_tb.v
+    Info (12023): Found entity 1: bitwise_and_32b_tb File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/bitwise_and_32b_tb.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file bitwise_and_32b.v
+    Info (12023): Found entity 1: bitwise_and_32b File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/bitwise_and_32b.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file rca_16b.v
+    Info (12023): Found entity 1: rca_16b File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/rca_16b.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file rca_4b.v
+    Info (12023): Found entity 1: rca_4b File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/rca_4b.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file fulladder_tb.v
+    Info (12023): Found entity 1: fulladder_tb File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/fulladder_tb.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file full_adder.v
+    Info (12023): Found entity 1: full_adder File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/full_adder.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file csa_32b_by_rca.v
+    Info (12023): Found entity 1: csa_32b_by_rca File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/csa_32b_by_rca.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu_tb.v
+    Info (12023): Found entity 1: alu_tb File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/alu_tb.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file alu.v
+    Info (12023): Found entity 1: alu File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/alu.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file adder_tb.v
+    Info (12023): Found entity 1: adder_tb File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/adder_tb.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file mux_2b.v
+    Info (12023): Found entity 1: mux_2b File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file barrel_shifter.v
+    Info (12023): Found entity 1: barrel_shifter File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/barrel_shifter.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux_8to1_32b.v
+    Info (12023): Found entity 1: mux_8to1_32b File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux_4to1_32b.v
+    Info (12023): Found entity 1: mux_4to1_32b File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_4to1_32b.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux_2to1_32b.v
+    Info (12023): Found entity 1: mux_2to1_32b File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2to1_32b.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at fulladder_tb.v(15): created implicit net for "c_out" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/fulladder_tb.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at alu.v(22): created implicit net for "c_out" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/alu.v Line: 22
+Warning (10236): Verilog HDL Implicit Net warning at adder_tb.v(15): created implicit net for "c_out" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/adder_tb.v Line: 15
+Info (12127): Elaborating entity "mux_8to1_32b" for the top level hierarchy
+Info (12128): Elaborating entity "mux_4to1_32b" for hierarchy "mux_4to1_32b:mux_4to1_top" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 9
+Info (12128): Elaborating entity "mux_2to1_32b" for hierarchy "mux_4to1_32b:mux_4to1_top|mux_2to1_32b:mux_2to1_top" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_4to1_32b.v Line: 9
+Warning (12010): Port "ordered port 1" on the entity instantiation of "mux_2to1_result" is connected to a signal of width 1. The formal width of the signal in the module is 32.  The extra bits will be driven by GND. File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_4to1_32b.v Line: 12
+Warning (12010): Port "ordered port 2" on the entity instantiation of "mux_2to1_result" is connected to a signal of width 1. The formal width of the signal in the module is 32.  The extra bits will be driven by GND. File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_4to1_32b.v Line: 12
+Warning (12030): Port "ordered port 0" on the entity instantiation of "mux_2to1_bottom" is connected to a signal of width 1. The formal width of the signal in the module is 32.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_4to1_32b.v Line: 10
+Warning (12030): Port "ordered port 0" on the entity instantiation of "mux_2to1_top" is connected to a signal of width 1. The formal width of the signal in the module is 32.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_4to1_32b.v Line: 9
+Warning (12241): 6 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "out[1]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
+    Warning (13410): Pin "out[2]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
+    Warning (13410): Pin "out[3]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
+    Warning (13410): Pin "out[4]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
+    Warning (13410): Pin "out[5]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
+    Warning (13410): Pin "out[6]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
+    Warning (13410): Pin "out[7]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
+    Warning (13410): Pin "out[8]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
+    Warning (13410): Pin "out[9]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
+    Warning (13410): Pin "out[10]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
+    Warning (13410): Pin "out[11]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
+    Warning (13410): Pin "out[12]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
+    Warning (13410): Pin "out[13]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
+    Warning (13410): Pin "out[14]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
+    Warning (13410): Pin "out[15]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
+    Warning (13410): Pin "out[16]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
+    Warning (13410): Pin "out[17]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
+    Warning (13410): Pin "out[18]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
+    Warning (13410): Pin "out[19]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
+    Warning (13410): Pin "out[20]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
+    Warning (13410): Pin "out[21]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
+    Warning (13410): Pin "out[22]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
+    Warning (13410): Pin "out[23]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
+    Warning (13410): Pin "out[24]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
+    Warning (13410): Pin "out[25]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
+    Warning (13410): Pin "out[26]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
+    Warning (13410): Pin "out[27]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
+    Warning (13410): Pin "out[28]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
+    Warning (13410): Pin "out[29]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
+    Warning (13410): Pin "out[30]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
+    Warning (13410): Pin "out[31]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 248 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "in0[1]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in0[2]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in0[3]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in0[4]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in0[5]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in0[6]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in0[7]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in0[8]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in0[9]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in0[10]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in0[11]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in0[12]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in0[13]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in0[14]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in0[15]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in0[16]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in0[17]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in0[18]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in0[19]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in0[20]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in0[21]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in0[22]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in0[23]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in0[24]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in0[25]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in0[26]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in0[27]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in0[28]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in0[29]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in0[30]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in0[31]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in1[1]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in1[2]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in1[3]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in1[4]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in1[5]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in1[6]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in1[7]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in1[8]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in1[9]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in1[10]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in1[11]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in1[12]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in1[13]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in1[14]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in1[15]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in1[16]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in1[17]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in1[18]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in1[19]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in1[20]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in1[21]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in1[22]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in1[23]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in1[24]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in1[25]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in1[26]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in1[27]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in1[28]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in1[29]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in1[30]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in1[31]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in2[1]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in2[2]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in2[3]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in2[4]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in2[5]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in2[6]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in2[7]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in2[8]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in2[9]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in2[10]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in2[11]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in2[12]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in2[13]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in2[14]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in2[15]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in2[16]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in2[17]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in2[18]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in2[19]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in2[20]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in2[21]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in2[22]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in2[23]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in2[24]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in2[25]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in2[26]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in2[27]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in2[28]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in2[29]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in2[30]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in2[31]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in3[1]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in3[2]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in3[3]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in3[4]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in3[5]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in3[6]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in3[7]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in3[8]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in3[9]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in3[10]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in3[11]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in3[12]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in3[13]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in3[14]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in3[15]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in3[16]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in3[17]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in3[18]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in3[19]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in3[20]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in3[21]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in3[22]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in3[23]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in3[24]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in3[25]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in3[26]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in3[27]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in3[28]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in3[29]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in3[30]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in3[31]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in4[1]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in4[2]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in4[3]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in4[4]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in4[5]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in4[6]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in4[7]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in4[8]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in4[9]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in4[10]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in4[11]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in4[12]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in4[13]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in4[14]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in4[15]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in4[16]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in4[17]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in4[18]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in4[19]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in4[20]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in4[21]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in4[22]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in4[23]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in4[24]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in4[25]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in4[26]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in4[27]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in4[28]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in4[29]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in4[30]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in4[31]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in5[1]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in5[2]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in5[3]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in5[4]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in5[5]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in5[6]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in5[7]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in5[8]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in5[9]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in5[10]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in5[11]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in5[12]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in5[13]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in5[14]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in5[15]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in5[16]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in5[17]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in5[18]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in5[19]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in5[20]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in5[21]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in5[22]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in5[23]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in5[24]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in5[25]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in5[26]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in5[27]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in5[28]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in5[29]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in5[30]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in5[31]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in6[1]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in6[2]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in6[3]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in6[4]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in6[5]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in6[6]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in6[7]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in6[8]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in6[9]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in6[10]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in6[11]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in6[12]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in6[13]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in6[14]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in6[15]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in6[16]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in6[17]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in6[18]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in6[19]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in6[20]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in6[21]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in6[22]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in6[23]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in6[24]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in6[25]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in6[26]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in6[27]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in6[28]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in6[29]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in6[30]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in6[31]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in7[1]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in7[2]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in7[3]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in7[4]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in7[5]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in7[6]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in7[7]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in7[8]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in7[9]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in7[10]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in7[11]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in7[12]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in7[13]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in7[14]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in7[15]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in7[16]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in7[17]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in7[18]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in7[19]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in7[20]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in7[21]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in7[22]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in7[23]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in7[24]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in7[25]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in7[26]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in7[27]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in7[28]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in7[29]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in7[30]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+    Warning (15610): No output dependent on input pin "in7[31]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
+Info (21057): Implemented 296 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 259 input pins
+    Info (21059): Implemented 32 output pins
+    Info (21061): Implemented 5 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 290 warnings
+    Info: Peak virtual memory: 4947 megabytes
+    Info: Processing ended: Wed Sep 22 19:17:28 2021
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:21
+
+
