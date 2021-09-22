@@ -53,6 +53,6 @@ module barrel_shifter
 			end
 		end
 	endgenerate
-	assign out = left==0?temp[N*M-1:N*M-N]:tempR[N*M-1:N*M-N];
+	assign out = left==1?temp[N*M-1:N*M-N]:tempR[N*M-1:N*M-N];
 endmodule
 	
