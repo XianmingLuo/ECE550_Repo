@@ -26,7 +26,7 @@ module alu(data_operandA, data_operandB, ctrl_ALUopcode, ctrl_shiftamt, data_res
 		end
 	endgenerate
 	assign finalB = ctrl_ALUopcode[0] == 0 ? data_operandB : notB;
-	assign cin = ctrl_ALUopcode[0] == 0 ? 0 : 1;
+	assign cin = ctrl_ALUopcode[0] == 0?0: 1;
 	//module csa_32b_by_rca(sum, c_out, ovf, a, b, c_in);
 	csa_32b_by_rca adder(sum_output, c_out, overflow, data_operandA, finalB, cin);
 	
@@ -49,8 +49,8 @@ module alu(data_operandA, data_operandB, ctrl_ALUopcode, ctrl_shiftamt, data_res
 								 0,
 								 ctrl_ALUopcode[2:1]);
 
-	assign isNotEqual = sum_output == 0?0:1;
+	assign isNotEqual = sum_output==0?0:1;
 	
 	not not_gate2(notSign, sum_output[31]);
-	assign isLessThan = overflow == 0?sum_output[31]:notSign;
+	assign isLessThan = overflow==0?sum_output[31]:notSign;
 endmodule
