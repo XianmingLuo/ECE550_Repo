@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/simulation/modelsim
 valu
-Z1 !s110 1632447222
+Z1 !s110 1632449876
 !i10b 1
 !s100 TnQk@Wh3:4;jZFEELfkTI2
 I6hJ^AVnlZMCZQhbbXMkig1
@@ -23,14 +23,14 @@ Z3 OV;L;10.4d;61
 r1
 !s85 0
 31
-Z4 !s108 1632447222.000000
+Z4 !s108 1632449876.000000
 !s107 C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/alu.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU|C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/alu.v|
 !i113 1
 Z5 o-vlog01compat -work work
 Z6 !s92 -vlog01compat -work work +incdir+C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU
 valu_tb
-R1
+Z7 !s110 1632449877
 !i10b 1
 !s100 2gj>0m:5`f1fzET?C;B^Z2
 IZW5dEa0Sl:KF6aB2Vl>e72
@@ -44,7 +44,7 @@ R3
 r1
 !s85 0
 31
-R4
+!s108 1632449877.000000
 !s107 C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/alu_tb.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU|C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/alu_tb.v|
 !i113 1
@@ -53,11 +53,11 @@ R6
 vbarrel_shifter
 R1
 !i10b 1
-!s100 J9FiAcIn:CEnW^ddj3AP50
-Ikk4WfBM7=fVf9S1T[>gWZ0
+!s100 d?Jj^WcSc8bcn[2c_cO[J0
+I5UC[e`^Xoa747A1gjmoLe2
 R2
 R0
-w1632337640
+w1632448363
 8C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/barrel_shifter.v
 FC:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/barrel_shifter.v
 L0 1
@@ -78,7 +78,7 @@ R1
 IYJ3Ommol4?k0:2[cJM>zz0
 R2
 R0
-Z7 w1632337827
+Z8 w1632337827
 8C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/bitwise_and_32b.v
 FC:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/bitwise_and_32b.v
 L0 1
@@ -93,13 +93,13 @@ R4
 R5
 R6
 vbitwise_or_32b
-!s110 1632447221
+R1
 !i10b 1
 !s100 nGZiKQc>MLI4X4SjWQm1_3
 Iel<QDLiZ:>jM[lQGaRVB]1
 R2
 R0
-R7
+R8
 8C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/bitwise_or_32b.v
 FC:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/bitwise_or_32b.v
 L0 1
@@ -107,7 +107,7 @@ R3
 r1
 !s85 0
 31
-!s108 1632447221.000000
+R4
 !s107 C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/bitwise_or_32b.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU|C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/bitwise_or_32b.v|
 !i113 1
@@ -120,7 +120,7 @@ R1
 IN8@Of?^cFONIaS]9fIbZE0
 R2
 R0
-Z8 w1632279662
+Z9 w1632279662
 8C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/csa_32b_by_rca.v
 FC:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/csa_32b_by_rca.v
 L0 1
@@ -141,7 +141,7 @@ R1
 Ig=4^V0jfOD5hMMdZZP>8J0
 R2
 R0
-R8
+R9
 8C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/full_adder.v
 FC:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/full_adder.v
 L0 1
@@ -155,29 +155,29 @@ R4
 !i113 1
 R5
 R6
-vmux_2b
+vmux_2to1_1b
 R1
 !i10b 1
-!s100 g`4aY5dXP9MDG7<U`loiz2
-IzaQ7QoQ:ozIVJJkhSlf^50
+!s100 >0A;Va::AQ4HDEFAahQeN0
+ILJWXGgjn9XNhmb^m=PLg[3
 R2
 R0
-w1632283458
-8C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/mux_2b.v
-FC:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/mux_2b.v
+w1632449846
+8C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/mux_2to1_1b.v
+FC:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/mux_2to1_1b.v
 L0 1
 R3
 r1
 !s85 0
 31
 R4
-!s107 C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/mux_2b.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU|C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/mux_2b.v|
+!s107 C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/mux_2to1_1b.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU|C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/mux_2to1_1b.v|
 !i113 1
 R5
 R6
 vmux_2to1_32b
-R1
+R7
 !i10b 1
 !s100 f0kBef8h9LX41?5k^SmIf3
 IJR9`<Wimi?lU0l>V`MmVQ0
@@ -225,7 +225,7 @@ R1
 I?dF@^1FA<kaDLIQQ>FC?E2
 R2
 R0
-R8
+R9
 8C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/rca_16b.v
 FC:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/rca_16b.v
 L0 1
@@ -246,7 +246,7 @@ R1
 IC]6d8[07MLgRn1g`=ekX32
 R2
 R0
-R8
+R9
 8C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/rca_4b.v
 FC:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/rca_4b.v
 L0 1

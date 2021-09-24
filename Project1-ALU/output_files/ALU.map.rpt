@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ALU
-Thu Sep 23 21:33:29 2021
+Thu Sep 23 22:17:43 2021
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -17,37 +17,37 @@ Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
   9. Multiplexer Restructuring Statistics (Restructuring Performed)
  10. Parameter Settings for User Entity Instance: barrel_shifter:shifter
  11. Port Connectivity Checks: "mux_4to1_32b:selecter"
- 12. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[15].m2"
- 13. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[14].m2"
- 14. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[13].m2"
- 15. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[12].m2"
- 16. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[11].m2"
- 17. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[10].m2"
- 18. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[9].m2"
- 19. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[8].m2"
- 20. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[7].m2"
- 21. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[6].m2"
- 22. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[5].m2"
- 23. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[4].m2"
- 24. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[3].m2"
- 25. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[2].m2"
- 26. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[1].m2"
- 27. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[0].m2"
- 28. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[7].m2"
- 29. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[6].m2"
- 30. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[5].m2"
- 31. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[4].m2"
- 32. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[3].m2"
- 33. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[2].m2"
- 34. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[1].m2"
- 35. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[0].m2"
- 36. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[3].m2"
- 37. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[2].m2"
- 38. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[1].m2"
- 39. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[0].m2"
- 40. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[1].m2"
- 41. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[0].m2"
- 42. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[0].shifter_left[0].m0"
+ 12. Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[4].shifter_left[15].m2"
+ 13. Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[4].shifter_left[14].m2"
+ 14. Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[4].shifter_left[13].m2"
+ 15. Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[4].shifter_left[12].m2"
+ 16. Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[4].shifter_left[11].m2"
+ 17. Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[4].shifter_left[10].m2"
+ 18. Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[4].shifter_left[9].m2"
+ 19. Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[4].shifter_left[8].m2"
+ 20. Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[4].shifter_left[7].m2"
+ 21. Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[4].shifter_left[6].m2"
+ 22. Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[4].shifter_left[5].m2"
+ 23. Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[4].shifter_left[4].m2"
+ 24. Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[4].shifter_left[3].m2"
+ 25. Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[4].shifter_left[2].m2"
+ 26. Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[4].shifter_left[1].m2"
+ 27. Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[4].shifter_left[0].m2"
+ 28. Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[3].shifter_left[7].m2"
+ 29. Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[3].shifter_left[6].m2"
+ 30. Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[3].shifter_left[5].m2"
+ 31. Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[3].shifter_left[4].m2"
+ 32. Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[3].shifter_left[3].m2"
+ 33. Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[3].shifter_left[2].m2"
+ 34. Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[3].shifter_left[1].m2"
+ 35. Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[3].shifter_left[0].m2"
+ 36. Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[2].shifter_left[3].m2"
+ 37. Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[2].shifter_left[2].m2"
+ 38. Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[2].shifter_left[1].m2"
+ 39. Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[2].shifter_left[0].m2"
+ 40. Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[1].shifter_left[1].m2"
+ 41. Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[1].shifter_left[0].m2"
+ 42. Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[0].shifter_left[0].m0"
  43. Port Connectivity Checks: "csa_32b_by_rca:adder|rca_16b:rca16b_2_1"
  44. Port Connectivity Checks: "csa_32b_by_rca:adder|rca_16b:rca16b_2_0"
  45. Port Connectivity Checks: "csa_32b_by_rca:adder|rca_16b:rca16b_1|rca_4b:rca4b_2"
@@ -84,7 +84,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Sep 23 21:33:29 2021       ;
+; Analysis & Synthesis Status        ; Successful - Thu Sep 23 22:17:43 2021       ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; ALU                                         ;
 ; Top-level Entity Name              ; alu                                         ;
@@ -209,6 +209,7 @@ agreement for further details.
 +----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                          ; Library ;
 +----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------+---------+
+; mux_2to1_1b.v                    ; yes             ; User Verilog HDL File  ; C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/mux_2to1_1b.v     ;         ;
 ; bitwise_or_32b.v                 ; yes             ; User Verilog HDL File  ; C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/bitwise_or_32b.v  ;         ;
 ; bitwise_and_32b.v                ; yes             ; User Verilog HDL File  ; C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/bitwise_and_32b.v ;         ;
 ; rca_16b.v                        ; yes             ; User Verilog HDL File  ; C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/rca_16b.v         ;         ;
@@ -216,7 +217,6 @@ agreement for further details.
 ; full_adder.v                     ; yes             ; User Verilog HDL File  ; C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/full_adder.v      ;         ;
 ; csa_32b_by_rca.v                 ; yes             ; User Verilog HDL File  ; C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/csa_32b_by_rca.v  ;         ;
 ; alu.v                            ; yes             ; User Verilog HDL File  ; C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/alu.v             ;         ;
-; mux_2b.v                         ; yes             ; User Verilog HDL File  ; C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/mux_2b.v          ;         ;
 ; barrel_shifter.v                 ; yes             ; User Verilog HDL File  ; C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/barrel_shifter.v  ;         ;
 ; mux_4to1_32b.v                   ; yes             ; User Verilog HDL File  ; C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/mux_4to1_32b.v    ;         ;
 ; mux_2to1_32b.v                   ; yes             ; User Verilog HDL File  ; C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/mux_2to1_32b.v    ;         ;
@@ -255,158 +255,158 @@ agreement for further details.
 +---------------------------------------------+------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                 ;
-+----------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------+----------------+--------------+
-; Compilation Hierarchy Node                               ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                          ; Entity Name    ; Library Name ;
-+----------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------+----------------+--------------+
-; |alu                                                     ; 483 (31)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 109  ; 0            ; |alu                                                                         ; alu            ; work         ;
-;    |barrel_shifter:shifter|                              ; 212 (10)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter                                                  ; barrel_shifter ; work         ;
-;       |mux_2b:shifter_left_sel[0].shifter_left[1].m1|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[0].shifter_left[1].m1    ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[0].shifter_left[26].m1|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[0].shifter_left[26].m1   ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[0].shifter_left[27].m1|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[0].shifter_left[27].m1   ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[0].shifter_left[28].m1|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[0].shifter_left[28].m1   ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[0].shifter_left[29].m1|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[0].shifter_left[29].m1   ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[1].shifter_left[10].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[10].m3   ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[1].shifter_left[11].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[11].m3   ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[1].shifter_left[12].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[12].m3   ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[1].shifter_left[13].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[13].m3   ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[1].shifter_left[14].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[14].m3   ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[1].shifter_left[15].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[15].m3   ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[1].shifter_left[16].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[16].m3   ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[1].shifter_left[17].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[17].m3   ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[1].shifter_left[18].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[18].m3   ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[1].shifter_left[19].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[19].m3   ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[1].shifter_left[20].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[20].m3   ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[1].shifter_left[21].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[21].m3   ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[1].shifter_left[22].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[22].m3   ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[1].shifter_left[23].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[23].m3   ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[1].shifter_left[24].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[24].m3   ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[1].shifter_left[25].m3|   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[25].m3   ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[1].shifter_left[26].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[26].m3   ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[1].shifter_left[27].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[27].m3   ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[1].shifter_left[2].m3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[2].m3    ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[1].shifter_left[3].m3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[3].m3    ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[1].shifter_left[4].m3|    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[4].m3    ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[1].shifter_left[5].m3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[5].m3    ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[1].shifter_left[6].m3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[6].m3    ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[1].shifter_left[7].m3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[7].m3    ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[1].shifter_left[8].m3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[8].m3    ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[1].shifter_left[9].m3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[9].m3    ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[2].shifter_left[0].m2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[0].m2    ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[2].shifter_left[10].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[10].m3   ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[2].shifter_left[11].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[11].m3   ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[2].shifter_left[12].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[12].m3   ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[2].shifter_left[13].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[13].m3   ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[2].shifter_left[14].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[14].m3   ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[2].shifter_left[15].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[15].m3   ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[2].shifter_left[16].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[16].m3   ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[2].shifter_left[17].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[17].m3   ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[2].shifter_left[18].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[18].m3   ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[2].shifter_left[19].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[19].m3   ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[2].shifter_left[20].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[20].m3   ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[2].shifter_left[21].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[21].m3   ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[2].shifter_left[22].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[22].m3   ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[2].shifter_left[23].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[23].m3   ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[2].shifter_left[4].m3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[4].m3    ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[2].shifter_left[9].m3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[9].m3    ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[3].shifter_left[0].m2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[0].m2    ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[3].shifter_left[10].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[10].m3   ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[3].shifter_left[11].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[11].m3   ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[3].shifter_left[12].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[12].m3   ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[3].shifter_left[13].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[13].m3   ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[3].shifter_left[14].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[14].m3   ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[3].shifter_left[15].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[15].m3   ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[3].shifter_left[16].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[16].m3   ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[3].shifter_left[1].m2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[1].m2    ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[3].shifter_left[2].m2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[2].m2    ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[3].shifter_left[30].m3|   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[30].m3   ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[3].shifter_left[3].m2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[3].m2    ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[3].shifter_left[4].m2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[4].m2    ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[3].shifter_left[5].m2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[5].m2    ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[3].shifter_left[6].m2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[6].m2    ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[3].shifter_left[7].m2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[7].m2    ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[3].shifter_left[8].m3|    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[8].m3    ; mux_2b         ; work         ;
-;       |mux_2b:shifter_left_sel[3].shifter_left[9].m3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[9].m3    ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[0].shifter_right[29].m5| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[0].shifter_right[29].m5 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[0].shifter_right[2].m5|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[0].shifter_right[2].m5  ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[0].shifter_right[3].m5|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[0].shifter_right[3].m5  ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[0].shifter_right[4].m5|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[0].shifter_right[4].m5  ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[0].shifter_right[5].m5|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[0].shifter_right[5].m5  ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[1].shifter_right[10].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[10].m7 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[1].shifter_right[11].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[11].m7 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[1].shifter_right[12].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[12].m7 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[1].shifter_right[13].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[13].m7 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[1].shifter_right[14].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[14].m7 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[1].shifter_right[15].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[15].m7 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[1].shifter_right[16].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[16].m7 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[1].shifter_right[17].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[17].m7 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[1].shifter_right[18].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[18].m7 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[1].shifter_right[19].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[19].m7 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[1].shifter_right[20].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[20].m7 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[1].shifter_right[21].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[21].m7 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[1].shifter_right[22].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[22].m7 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[1].shifter_right[23].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[23].m7 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[1].shifter_right[24].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[24].m7 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[1].shifter_right[25].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[25].m7 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[1].shifter_right[26].m7| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[26].m7 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[1].shifter_right[27].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[27].m7 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[1].shifter_right[28].m7| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[28].m7 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[1].shifter_right[4].m7|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[4].m7  ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[1].shifter_right[5].m7|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[5].m7  ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[1].shifter_right[6].m7|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[6].m7  ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[1].shifter_right[7].m7|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[7].m7  ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[1].shifter_right[8].m7|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[8].m7  ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[1].shifter_right[9].m7|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[9].m7  ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[2].shifter_right[10].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[2].shifter_right[10].m7 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[2].shifter_right[11].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[2].shifter_right[11].m7 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[2].shifter_right[12].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[2].shifter_right[12].m7 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[2].shifter_right[13].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[2].shifter_right[13].m7 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[2].shifter_right[14].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[2].shifter_right[14].m7 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[2].shifter_right[15].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[2].shifter_right[15].m7 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[2].shifter_right[16].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[2].shifter_right[16].m7 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[2].shifter_right[17].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[2].shifter_right[17].m7 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[2].shifter_right[18].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[2].shifter_right[18].m7 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[2].shifter_right[19].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[2].shifter_right[19].m7 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[2].shifter_right[20].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[2].shifter_right[20].m7 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[2].shifter_right[21].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[2].shifter_right[21].m7 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[2].shifter_right[22].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[2].shifter_right[22].m7 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[2].shifter_right[23].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[2].shifter_right[23].m7 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[2].shifter_right[25].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[2].shifter_right[25].m7 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[2].shifter_right[26].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[2].shifter_right[26].m7 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[2].shifter_right[8].m7|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[2].shifter_right[8].m7  ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[2].shifter_right[9].m7|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[2].shifter_right[9].m7  ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[3].shifter_right[16].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[3].shifter_right[16].m7 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[3].shifter_right[17].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[3].shifter_right[17].m7 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[3].shifter_right[18].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[3].shifter_right[18].m7 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[3].shifter_right[19].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[3].shifter_right[19].m7 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[3].shifter_right[20].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[3].shifter_right[20].m7 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[3].shifter_right[21].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[3].shifter_right[21].m7 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[3].shifter_right[22].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[3].shifter_right[22].m7 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[3].shifter_right[23].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[3].shifter_right[23].m7 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[3].shifter_right[24].m6| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[3].shifter_right[24].m6 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[3].shifter_right[25].m6| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[3].shifter_right[25].m6 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[3].shifter_right[26].m6| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[3].shifter_right[26].m6 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[3].shifter_right[27].m6| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[3].shifter_right[27].m6 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[3].shifter_right[28].m6| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[3].shifter_right[28].m6 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[3].shifter_right[29].m6| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[3].shifter_right[29].m6 ; mux_2b         ; work         ;
-;       |mux_2b:shifter_right_sel[3].shifter_right[30].m6| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[3].shifter_right[30].m6 ; mux_2b         ; work         ;
-;    |csa_32b_by_rca:adder|                                ; 55 (3)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|csa_32b_by_rca:adder                                                    ; csa_32b_by_rca ; work         ;
-;       |rca_16b:rca16b_1|                                 ; 19 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|csa_32b_by_rca:adder|rca_16b:rca16b_1                                   ; rca_16b        ; work         ;
-;          |rca_4b:rca4b_0|                                ; 19 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|csa_32b_by_rca:adder|rca_16b:rca16b_1|rca_4b:rca4b_0                    ; rca_4b         ; work         ;
-;             |full_adder:FA_0|                            ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|csa_32b_by_rca:adder|rca_16b:rca16b_1|rca_4b:rca4b_0|full_adder:FA_0    ; full_adder     ; work         ;
-;             |full_adder:FA_1|                            ; 17 (17)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|csa_32b_by_rca:adder|rca_16b:rca16b_1|rca_4b:rca4b_0|full_adder:FA_1    ; full_adder     ; work         ;
-;       |rca_16b:rca16b_2_0|                               ; 17 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|csa_32b_by_rca:adder|rca_16b:rca16b_2_0                                 ; rca_16b        ; work         ;
-;          |rca_4b:rca4b_0|                                ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|csa_32b_by_rca:adder|rca_16b:rca16b_2_0|rca_4b:rca4b_0                  ; rca_4b         ; work         ;
-;             |full_adder:FA_1|                            ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|csa_32b_by_rca:adder|rca_16b:rca16b_2_0|rca_4b:rca4b_0|full_adder:FA_1  ; full_adder     ; work         ;
-;          |rca_4b:rca4b_3|                                ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|csa_32b_by_rca:adder|rca_16b:rca16b_2_0|rca_4b:rca4b_3                  ; rca_4b         ; work         ;
-;             |full_adder:FA_3|                            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|csa_32b_by_rca:adder|rca_16b:rca16b_2_0|rca_4b:rca4b_3|full_adder:FA_3  ; full_adder     ; work         ;
-;       |rca_16b:rca16b_2_1|                               ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|csa_32b_by_rca:adder|rca_16b:rca16b_2_1                                 ; rca_16b        ; work         ;
-;          |rca_4b:rca4b_0|                                ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|csa_32b_by_rca:adder|rca_16b:rca16b_2_1|rca_4b:rca4b_0                  ; rca_4b         ; work         ;
-;             |full_adder:FA_1|                            ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|csa_32b_by_rca:adder|rca_16b:rca16b_2_1|rca_4b:rca4b_0|full_adder:FA_1  ; full_adder     ; work         ;
-;    |mux_4to1_32b:selecter|                               ; 185 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|mux_4to1_32b:selecter                                                   ; mux_4to1_32b   ; work         ;
-;       |mux_2to1_32b:mux_2to1_result|                     ; 185 (185)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|mux_4to1_32b:selecter|mux_2to1_32b:mux_2to1_result                      ; mux_2to1_32b   ; work         ;
-+----------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------+----------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                           ;
++---------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------+----------------+--------------+
+; Compilation Hierarchy Node                                    ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                               ; Entity Name    ; Library Name ;
++---------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------+----------------+--------------+
+; |alu                                                          ; 483 (31)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 109  ; 0            ; |alu                                                                              ; alu            ; work         ;
+;    |barrel_shifter:shifter|                                   ; 212 (10)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter                                                       ; barrel_shifter ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[0].shifter_left[1].m1|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[0].shifter_left[1].m1    ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[0].shifter_left[26].m1|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[0].shifter_left[26].m1   ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[0].shifter_left[27].m1|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[0].shifter_left[27].m1   ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[0].shifter_left[28].m1|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[0].shifter_left[28].m1   ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[0].shifter_left[29].m1|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[0].shifter_left[29].m1   ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[1].shifter_left[10].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[1].shifter_left[10].m3   ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[1].shifter_left[11].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[1].shifter_left[11].m3   ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[1].shifter_left[12].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[1].shifter_left[12].m3   ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[1].shifter_left[13].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[1].shifter_left[13].m3   ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[1].shifter_left[14].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[1].shifter_left[14].m3   ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[1].shifter_left[15].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[1].shifter_left[15].m3   ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[1].shifter_left[16].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[1].shifter_left[16].m3   ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[1].shifter_left[17].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[1].shifter_left[17].m3   ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[1].shifter_left[18].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[1].shifter_left[18].m3   ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[1].shifter_left[19].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[1].shifter_left[19].m3   ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[1].shifter_left[20].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[1].shifter_left[20].m3   ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[1].shifter_left[21].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[1].shifter_left[21].m3   ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[1].shifter_left[22].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[1].shifter_left[22].m3   ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[1].shifter_left[23].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[1].shifter_left[23].m3   ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[1].shifter_left[24].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[1].shifter_left[24].m3   ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[1].shifter_left[25].m3|   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[1].shifter_left[25].m3   ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[1].shifter_left[26].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[1].shifter_left[26].m3   ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[1].shifter_left[27].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[1].shifter_left[27].m3   ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[1].shifter_left[2].m3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[1].shifter_left[2].m3    ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[1].shifter_left[3].m3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[1].shifter_left[3].m3    ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[1].shifter_left[4].m3|    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[1].shifter_left[4].m3    ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[1].shifter_left[5].m3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[1].shifter_left[5].m3    ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[1].shifter_left[6].m3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[1].shifter_left[6].m3    ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[1].shifter_left[7].m3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[1].shifter_left[7].m3    ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[1].shifter_left[8].m3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[1].shifter_left[8].m3    ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[1].shifter_left[9].m3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[1].shifter_left[9].m3    ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[2].shifter_left[0].m2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[2].shifter_left[0].m2    ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[2].shifter_left[10].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[2].shifter_left[10].m3   ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[2].shifter_left[11].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[2].shifter_left[11].m3   ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[2].shifter_left[12].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[2].shifter_left[12].m3   ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[2].shifter_left[13].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[2].shifter_left[13].m3   ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[2].shifter_left[14].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[2].shifter_left[14].m3   ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[2].shifter_left[15].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[2].shifter_left[15].m3   ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[2].shifter_left[16].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[2].shifter_left[16].m3   ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[2].shifter_left[17].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[2].shifter_left[17].m3   ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[2].shifter_left[18].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[2].shifter_left[18].m3   ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[2].shifter_left[19].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[2].shifter_left[19].m3   ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[2].shifter_left[20].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[2].shifter_left[20].m3   ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[2].shifter_left[21].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[2].shifter_left[21].m3   ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[2].shifter_left[22].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[2].shifter_left[22].m3   ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[2].shifter_left[23].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[2].shifter_left[23].m3   ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[2].shifter_left[4].m3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[2].shifter_left[4].m3    ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[2].shifter_left[9].m3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[2].shifter_left[9].m3    ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[3].shifter_left[0].m2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[3].shifter_left[0].m2    ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[3].shifter_left[10].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[3].shifter_left[10].m3   ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[3].shifter_left[11].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[3].shifter_left[11].m3   ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[3].shifter_left[12].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[3].shifter_left[12].m3   ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[3].shifter_left[13].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[3].shifter_left[13].m3   ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[3].shifter_left[14].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[3].shifter_left[14].m3   ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[3].shifter_left[15].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[3].shifter_left[15].m3   ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[3].shifter_left[16].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[3].shifter_left[16].m3   ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[3].shifter_left[1].m2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[3].shifter_left[1].m2    ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[3].shifter_left[2].m2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[3].shifter_left[2].m2    ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[3].shifter_left[30].m3|   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[3].shifter_left[30].m3   ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[3].shifter_left[3].m2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[3].shifter_left[3].m2    ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[3].shifter_left[4].m2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[3].shifter_left[4].m2    ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[3].shifter_left[5].m2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[3].shifter_left[5].m2    ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[3].shifter_left[6].m2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[3].shifter_left[6].m2    ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[3].shifter_left[7].m2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[3].shifter_left[7].m2    ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[3].shifter_left[8].m3|    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[3].shifter_left[8].m3    ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_left_sel[3].shifter_left[9].m3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[3].shifter_left[9].m3    ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[0].shifter_right[29].m5| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[0].shifter_right[29].m5 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[0].shifter_right[2].m5|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[0].shifter_right[2].m5  ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[0].shifter_right[3].m5|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[0].shifter_right[3].m5  ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[0].shifter_right[4].m5|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[0].shifter_right[4].m5  ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[0].shifter_right[5].m5|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[0].shifter_right[5].m5  ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[1].shifter_right[10].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[1].shifter_right[10].m7 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[1].shifter_right[11].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[1].shifter_right[11].m7 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[1].shifter_right[12].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[1].shifter_right[12].m7 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[1].shifter_right[13].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[1].shifter_right[13].m7 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[1].shifter_right[14].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[1].shifter_right[14].m7 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[1].shifter_right[15].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[1].shifter_right[15].m7 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[1].shifter_right[16].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[1].shifter_right[16].m7 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[1].shifter_right[17].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[1].shifter_right[17].m7 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[1].shifter_right[18].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[1].shifter_right[18].m7 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[1].shifter_right[19].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[1].shifter_right[19].m7 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[1].shifter_right[20].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[1].shifter_right[20].m7 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[1].shifter_right[21].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[1].shifter_right[21].m7 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[1].shifter_right[22].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[1].shifter_right[22].m7 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[1].shifter_right[23].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[1].shifter_right[23].m7 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[1].shifter_right[24].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[1].shifter_right[24].m7 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[1].shifter_right[25].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[1].shifter_right[25].m7 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[1].shifter_right[26].m7| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[1].shifter_right[26].m7 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[1].shifter_right[27].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[1].shifter_right[27].m7 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[1].shifter_right[28].m7| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[1].shifter_right[28].m7 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[1].shifter_right[4].m7|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[1].shifter_right[4].m7  ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[1].shifter_right[5].m7|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[1].shifter_right[5].m7  ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[1].shifter_right[6].m7|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[1].shifter_right[6].m7  ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[1].shifter_right[7].m7|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[1].shifter_right[7].m7  ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[1].shifter_right[8].m7|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[1].shifter_right[8].m7  ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[1].shifter_right[9].m7|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[1].shifter_right[9].m7  ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[2].shifter_right[10].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[2].shifter_right[10].m7 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[2].shifter_right[11].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[2].shifter_right[11].m7 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[2].shifter_right[12].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[2].shifter_right[12].m7 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[2].shifter_right[13].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[2].shifter_right[13].m7 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[2].shifter_right[14].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[2].shifter_right[14].m7 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[2].shifter_right[15].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[2].shifter_right[15].m7 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[2].shifter_right[16].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[2].shifter_right[16].m7 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[2].shifter_right[17].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[2].shifter_right[17].m7 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[2].shifter_right[18].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[2].shifter_right[18].m7 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[2].shifter_right[19].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[2].shifter_right[19].m7 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[2].shifter_right[20].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[2].shifter_right[20].m7 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[2].shifter_right[21].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[2].shifter_right[21].m7 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[2].shifter_right[22].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[2].shifter_right[22].m7 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[2].shifter_right[23].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[2].shifter_right[23].m7 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[2].shifter_right[25].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[2].shifter_right[25].m7 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[2].shifter_right[26].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[2].shifter_right[26].m7 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[2].shifter_right[8].m7|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[2].shifter_right[8].m7  ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[2].shifter_right[9].m7|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[2].shifter_right[9].m7  ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[3].shifter_right[16].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[3].shifter_right[16].m7 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[3].shifter_right[17].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[3].shifter_right[17].m7 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[3].shifter_right[18].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[3].shifter_right[18].m7 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[3].shifter_right[19].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[3].shifter_right[19].m7 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[3].shifter_right[20].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[3].shifter_right[20].m7 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[3].shifter_right[21].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[3].shifter_right[21].m7 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[3].shifter_right[22].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[3].shifter_right[22].m7 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[3].shifter_right[23].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[3].shifter_right[23].m7 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[3].shifter_right[24].m6| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[3].shifter_right[24].m6 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[3].shifter_right[25].m6| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[3].shifter_right[25].m6 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[3].shifter_right[26].m6| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[3].shifter_right[26].m6 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[3].shifter_right[27].m6| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[3].shifter_right[27].m6 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[3].shifter_right[28].m6| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[3].shifter_right[28].m6 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[3].shifter_right[29].m6| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[3].shifter_right[29].m6 ; mux_2to1_1b    ; work         ;
+;       |mux_2to1_1b:shifter_right_sel[3].shifter_right[30].m6| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2to1_1b:shifter_right_sel[3].shifter_right[30].m6 ; mux_2to1_1b    ; work         ;
+;    |csa_32b_by_rca:adder|                                     ; 55 (3)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|csa_32b_by_rca:adder                                                         ; csa_32b_by_rca ; work         ;
+;       |rca_16b:rca16b_1|                                      ; 19 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|csa_32b_by_rca:adder|rca_16b:rca16b_1                                        ; rca_16b        ; work         ;
+;          |rca_4b:rca4b_0|                                     ; 19 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|csa_32b_by_rca:adder|rca_16b:rca16b_1|rca_4b:rca4b_0                         ; rca_4b         ; work         ;
+;             |full_adder:FA_0|                                 ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|csa_32b_by_rca:adder|rca_16b:rca16b_1|rca_4b:rca4b_0|full_adder:FA_0         ; full_adder     ; work         ;
+;             |full_adder:FA_1|                                 ; 17 (17)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|csa_32b_by_rca:adder|rca_16b:rca16b_1|rca_4b:rca4b_0|full_adder:FA_1         ; full_adder     ; work         ;
+;       |rca_16b:rca16b_2_0|                                    ; 17 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|csa_32b_by_rca:adder|rca_16b:rca16b_2_0                                      ; rca_16b        ; work         ;
+;          |rca_4b:rca4b_0|                                     ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|csa_32b_by_rca:adder|rca_16b:rca16b_2_0|rca_4b:rca4b_0                       ; rca_4b         ; work         ;
+;             |full_adder:FA_1|                                 ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|csa_32b_by_rca:adder|rca_16b:rca16b_2_0|rca_4b:rca4b_0|full_adder:FA_1       ; full_adder     ; work         ;
+;          |rca_4b:rca4b_3|                                     ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|csa_32b_by_rca:adder|rca_16b:rca16b_2_0|rca_4b:rca4b_3                       ; rca_4b         ; work         ;
+;             |full_adder:FA_3|                                 ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|csa_32b_by_rca:adder|rca_16b:rca16b_2_0|rca_4b:rca4b_3|full_adder:FA_3       ; full_adder     ; work         ;
+;       |rca_16b:rca16b_2_1|                                    ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|csa_32b_by_rca:adder|rca_16b:rca16b_2_1                                      ; rca_16b        ; work         ;
+;          |rca_4b:rca4b_0|                                     ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|csa_32b_by_rca:adder|rca_16b:rca16b_2_1|rca_4b:rca4b_0                       ; rca_4b         ; work         ;
+;             |full_adder:FA_1|                                 ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|csa_32b_by_rca:adder|rca_16b:rca16b_2_1|rca_4b:rca4b_0|full_adder:FA_1       ; full_adder     ; work         ;
+;    |mux_4to1_32b:selecter|                                    ; 185 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|mux_4to1_32b:selecter                                                        ; mux_4to1_32b   ; work         ;
+;       |mux_2to1_32b:mux_2to1_result|                          ; 185 (185)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|mux_4to1_32b:selecter|mux_2to1_32b:mux_2to1_result                           ; mux_2to1_32b   ; work         ;
++---------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------+----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -461,7 +461,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[15].m2"                                                                                                             ;
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[4].shifter_left[15].m2"                                                                                                        ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -471,7 +471,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[14].m2"                                                                                                             ;
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[4].shifter_left[14].m2"                                                                                                        ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -481,7 +481,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[13].m2"                                                                                                             ;
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[4].shifter_left[13].m2"                                                                                                        ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -491,7 +491,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[12].m2"                                                                                                             ;
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[4].shifter_left[12].m2"                                                                                                        ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -501,7 +501,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[11].m2"                                                                                                             ;
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[4].shifter_left[11].m2"                                                                                                        ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -511,7 +511,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[10].m2"                                                                                                             ;
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[4].shifter_left[10].m2"                                                                                                        ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -521,7 +521,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[9].m2"                                                                                                              ;
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[4].shifter_left[9].m2"                                                                                                         ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -531,7 +531,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[8].m2"                                                                                                              ;
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[4].shifter_left[8].m2"                                                                                                         ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -541,7 +541,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[7].m2"                                                                                                              ;
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[4].shifter_left[7].m2"                                                                                                         ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -551,7 +551,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[6].m2"                                                                                                              ;
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[4].shifter_left[6].m2"                                                                                                         ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -561,7 +561,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[5].m2"                                                                                                              ;
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[4].shifter_left[5].m2"                                                                                                         ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -571,7 +571,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[4].m2"                                                                                                              ;
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[4].shifter_left[4].m2"                                                                                                         ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -581,7 +581,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[3].m2"                                                                                                              ;
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[4].shifter_left[3].m2"                                                                                                         ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -591,7 +591,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[2].m2"                                                                                                              ;
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[4].shifter_left[2].m2"                                                                                                         ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -601,7 +601,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[1].m2"                                                                                                              ;
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[4].shifter_left[1].m2"                                                                                                         ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -611,7 +611,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[0].m2"                                                                                                              ;
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[4].shifter_left[0].m2"                                                                                                         ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -621,7 +621,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[7].m2"                                                                                                              ;
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[3].shifter_left[7].m2"                                                                                                         ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -631,7 +631,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[6].m2"                                                                                                              ;
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[3].shifter_left[6].m2"                                                                                                         ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -641,7 +641,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[5].m2"                                                                                                              ;
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[3].shifter_left[5].m2"                                                                                                         ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -651,7 +651,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[4].m2"                                                                                                              ;
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[3].shifter_left[4].m2"                                                                                                         ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -661,7 +661,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[3].m2"                                                                                                              ;
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[3].shifter_left[3].m2"                                                                                                         ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -671,7 +671,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[2].m2"                                                                                                              ;
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[3].shifter_left[2].m2"                                                                                                         ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -681,7 +681,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[1].m2"                                                                                                              ;
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[3].shifter_left[1].m2"                                                                                                         ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -691,7 +691,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[0].m2"                                                                                                              ;
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[3].shifter_left[0].m2"                                                                                                         ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -701,7 +701,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[3].m2"                                                                                                              ;
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[2].shifter_left[3].m2"                                                                                                         ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -711,7 +711,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[2].m2"                                                                                                              ;
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[2].shifter_left[2].m2"                                                                                                         ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -721,7 +721,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[1].m2"                                                                                                              ;
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[2].shifter_left[1].m2"                                                                                                         ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -731,7 +731,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[0].m2"                                                                                                              ;
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[2].shifter_left[0].m2"                                                                                                         ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -741,7 +741,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[1].m2"                                                                                                              ;
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[1].shifter_left[1].m2"                                                                                                         ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -751,7 +751,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[0].m2"                                                                                                              ;
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[1].shifter_left[0].m2"                                                                                                         ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -761,7 +761,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[0].shifter_left[0].m0"                                                                                                              ;
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[0].shifter_left[0].m0"                                                                                                         ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -871,10 +871,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Thu Sep 23 21:33:17 2021
+    Info: Processing started: Thu Sep 23 22:17:31 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file mux_2to1_1b.v
+    Info (12023): Found entity 1: mux_2to1_1b File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/mux_2to1_1b.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file barrel_shifter_tb.v
     Info (12023): Found entity 1: barrel_shifter_tb File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/barrel_shifter_tb.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file bitwise_or_32b_tb.v
@@ -901,8 +903,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file alu.v
     Info (12023): Found entity 1: alu File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/alu.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file adder_tb.v
     Info (12023): Found entity 1: adder_tb File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/adder_tb.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file mux_2b.v
-    Info (12023): Found entity 1: mux_2b File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/mux_2b.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file barrel_shifter.v
     Info (12023): Found entity 1: barrel_shifter File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/barrel_shifter.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux_8to1_32b.v
@@ -924,7 +924,7 @@ Info (12128): Elaborating entity "full_adder" for hierarchy "csa_32b_by_rca:adde
 Info (12128): Elaborating entity "bitwise_and_32b" for hierarchy "bitwise_and_32b:and32b" File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/alu.v Line: 34
 Info (12128): Elaborating entity "bitwise_or_32b" for hierarchy "bitwise_or_32b:or32b" File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/alu.v Line: 37
 Info (12128): Elaborating entity "barrel_shifter" for hierarchy "barrel_shifter:shifter" File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/alu.v Line: 41
-Info (12128): Elaborating entity "mux_2b" for hierarchy "barrel_shifter:shifter|mux_2b:shifter_left_sel[0].shifter_left[0].m0" File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/barrel_shifter.v Line: 24
+Info (12128): Elaborating entity "mux_2to1_1b" for hierarchy "barrel_shifter:shifter|mux_2to1_1b:shifter_left_sel[0].shifter_left[0].m0" File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/barrel_shifter.v Line: 24
 Info (12128): Elaborating entity "mux_2to1_32b" for hierarchy "mux_2to1_32b:logic_sel" File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/alu.v Line: 44
 Info (12128): Elaborating entity "mux_4to1_32b" for hierarchy "mux_4to1_32b:selecter" File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/alu.v Line: 50
 Info (13014): Ignored 1 buffer(s)
@@ -941,9 +941,9 @@ Info (21057): Implemented 592 device resources after synthesis - the final resou
     Info (21059): Implemented 35 output pins
     Info (21061): Implemented 483 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
-    Info: Peak virtual memory: 4975 megabytes
-    Info: Processing ended: Thu Sep 23 21:33:29 2021
+    Info: Peak virtual memory: 4977 megabytes
+    Info: Processing ended: Thu Sep 23 22:17:43 2021
     Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:27
+    Info: Total CPU time (on all processors): 00:00:26
 
 
