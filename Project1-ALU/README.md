@@ -20,6 +20,7 @@ However, there is more we should consider about. When the ALU comes across overf
 So that we implemented a 1-bit 2:1 mux to select from sign and notSign according to overflow signal.
 
 ## Source Structure
+```
 .\
 ├── alu.v\
 │	├── barrel_shifter.v			#32-bit barrel_shifter\
@@ -34,5 +35,6 @@ So that we implemented a 1-bit 2:1 mux to select from sign and notSign according
 │		├── mux_4to1_32b.v 			#32-bit 4:1 mux\
 │			├── mux_2to1_32b.v 		#32-bit 2:1 mux\
 └── ...\
+```
 
 
