@@ -23,17 +23,17 @@ So that we implemented a 1-bit 2:1 mux to select from sign and notSign according
 ```
 .\
 ├── alu.v\
-│	├── barrel_shifter.v			#32-bit barrel_shifter\
-│	│	├── mux_2to1_1b.v   		#1-bit 2:1 mux\
-│	├── csa_32b_by_rca.v			#32-bit Carry Select Adder made by 16bit Ripple Carry Adder\
-│	│	├── rca_16b.v 				#16-bit Ripple Carry Adder made by 4bit Ripplpe Carry Adder\
-│	│		├── rca_4b.v			#4-bit Ripple Carry Adder made by full adder\
-│	│			├── full_adder.v 	#1-bit full adder\
-│	├── bitwise_and_32b.v			#32-bit bitwise and\
-│	├── bitwise_or_32b.v			#32-bit bitwise or\
-│	├── mux_8to1_32b.v				#32-bit 8:1 mux\
-│		├── mux_4to1_32b.v 			#32-bit 4:1 mux\
-│			├── mux_2to1_32b.v 		#32-bit 2:1 mux\
+│	├── barrel_shifter.v				#32-bit barrel_shifter
+│	│	├── mux_2to1_1b.v   			#1-bit 2:1 mux
+│	├── csa_32b_by_rca.v				#32-bit Carry Select Adder made by 16bit Ripple Carry Adder
+│	│	├── rca_16b.v 					#16-bit Ripple Carry Adder made by 4bit Ripplpe Carry Adder
+│	│		├── rca_4b.v				#4-bit Ripple Carry Adder made by full adder
+│	│			├── full_adder.v 		#1-bit full adder
+│	├── bitwise_and_32b.v				#32-bit bitwise and
+│	├── bitwise_or_32b.v				#32-bit bitwise or
+│	├── mux_8to1_32b.v					#32-bit 8:1 mux
+│		├── mux_4to1_32b.v 				#32-bit 4:1 mux
+│			├── mux_2to1_32b.v 			#32-bit 2:1 mux
 └── ...\
 ```
 
