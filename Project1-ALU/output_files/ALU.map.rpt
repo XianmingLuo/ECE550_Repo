@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ALU
-Wed Sep 22 19:17:28 2021
+Thu Sep 23 21:33:29 2021
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -14,15 +14,50 @@ Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Port Connectivity Checks: "mux_2to1_32b:mux_2to1_result"
- 10. Port Connectivity Checks: "mux_4to1_32b:mux_4to1_bottom"
- 11. Port Connectivity Checks: "mux_4to1_32b:mux_4to1_top|mux_2to1_32b:mux_2to1_result"
- 12. Port Connectivity Checks: "mux_4to1_32b:mux_4to1_top|mux_2to1_32b:mux_2to1_bottom"
- 13. Port Connectivity Checks: "mux_4to1_32b:mux_4to1_top|mux_2to1_32b:mux_2to1_top"
- 14. Port Connectivity Checks: "mux_4to1_32b:mux_4to1_top"
- 15. Post-Synthesis Netlist Statistics for Top Partition
- 16. Elapsed Time Per Partition
- 17. Analysis & Synthesis Messages
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Parameter Settings for User Entity Instance: barrel_shifter:shifter
+ 11. Port Connectivity Checks: "mux_4to1_32b:selecter"
+ 12. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[15].m2"
+ 13. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[14].m2"
+ 14. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[13].m2"
+ 15. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[12].m2"
+ 16. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[11].m2"
+ 17. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[10].m2"
+ 18. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[9].m2"
+ 19. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[8].m2"
+ 20. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[7].m2"
+ 21. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[6].m2"
+ 22. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[5].m2"
+ 23. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[4].m2"
+ 24. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[3].m2"
+ 25. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[2].m2"
+ 26. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[1].m2"
+ 27. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[0].m2"
+ 28. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[7].m2"
+ 29. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[6].m2"
+ 30. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[5].m2"
+ 31. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[4].m2"
+ 32. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[3].m2"
+ 33. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[2].m2"
+ 34. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[1].m2"
+ 35. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[0].m2"
+ 36. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[3].m2"
+ 37. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[2].m2"
+ 38. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[1].m2"
+ 39. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[0].m2"
+ 40. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[1].m2"
+ 41. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[0].m2"
+ 42. Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[0].shifter_left[0].m0"
+ 43. Port Connectivity Checks: "csa_32b_by_rca:adder|rca_16b:rca16b_2_1"
+ 44. Port Connectivity Checks: "csa_32b_by_rca:adder|rca_16b:rca16b_2_0"
+ 45. Port Connectivity Checks: "csa_32b_by_rca:adder|rca_16b:rca16b_1|rca_4b:rca4b_2"
+ 46. Port Connectivity Checks: "csa_32b_by_rca:adder|rca_16b:rca16b_1|rca_4b:rca4b_1"
+ 47. Port Connectivity Checks: "csa_32b_by_rca:adder|rca_16b:rca16b_1|rca_4b:rca4b_0"
+ 48. Port Connectivity Checks: "csa_32b_by_rca:adder|rca_16b:rca16b_1"
+ 49. Port Connectivity Checks: "csa_32b_by_rca:adder"
+ 50. Post-Synthesis Netlist Statistics for Top Partition
+ 51. Elapsed Time Per Partition
+ 52. Analysis & Synthesis Messages
 
 
 
@@ -49,16 +84,16 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Sep 22 19:17:28 2021       ;
+; Analysis & Synthesis Status        ; Successful - Thu Sep 23 21:33:29 2021       ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; ALU                                         ;
-; Top-level Entity Name              ; mux_8to1_32b                                ;
+; Top-level Entity Name              ; alu                                         ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 5                                           ;
-;     Total combinational functions  ; 5                                           ;
+; Total logic elements               ; 483                                         ;
+;     Total combinational functions  ; 483                                         ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 291                                         ;
+; Total pins                         ; 109                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -72,7 +107,7 @@ agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                                      ; mux_8to1_32b       ; ALU                ;
+; Top-level entity name                                                      ; alu                ; ALU                ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -158,8 +193,8 @@ agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 2           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -169,58 +204,209 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                          ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                            ; Library ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------+---------+
-; mux_8to1_32b.v                   ; yes             ; User Verilog HDL File  ; C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v ;         ;
-; mux_4to1_32b.v                   ; yes             ; User Verilog HDL File  ; C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_4to1_32b.v ;         ;
-; mux_2to1_32b.v                   ; yes             ; User Verilog HDL File  ; C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2to1_32b.v ;         ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                        ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                          ; Library ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------+---------+
+; bitwise_or_32b.v                 ; yes             ; User Verilog HDL File  ; C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/bitwise_or_32b.v  ;         ;
+; bitwise_and_32b.v                ; yes             ; User Verilog HDL File  ; C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/bitwise_and_32b.v ;         ;
+; rca_16b.v                        ; yes             ; User Verilog HDL File  ; C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/rca_16b.v         ;         ;
+; rca_4b.v                         ; yes             ; User Verilog HDL File  ; C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/rca_4b.v          ;         ;
+; full_adder.v                     ; yes             ; User Verilog HDL File  ; C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/full_adder.v      ;         ;
+; csa_32b_by_rca.v                 ; yes             ; User Verilog HDL File  ; C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/csa_32b_by_rca.v  ;         ;
+; alu.v                            ; yes             ; User Verilog HDL File  ; C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/alu.v             ;         ;
+; mux_2b.v                         ; yes             ; User Verilog HDL File  ; C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/mux_2b.v          ;         ;
+; barrel_shifter.v                 ; yes             ; User Verilog HDL File  ; C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/barrel_shifter.v  ;         ;
+; mux_4to1_32b.v                   ; yes             ; User Verilog HDL File  ; C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/mux_4to1_32b.v    ;         ;
+; mux_2to1_32b.v                   ; yes             ; User Verilog HDL File  ; C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/mux_2to1_32b.v    ;         ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                ;
-+---------------------------------------------+--------------+
-; Resource                                    ; Usage        ;
-+---------------------------------------------+--------------+
-; Estimated Total logic elements              ; 5            ;
-;                                             ;              ;
-; Total combinational functions               ; 5            ;
-; Logic element usage by number of LUT inputs ;              ;
-;     -- 4 input functions                    ; 4            ;
-;     -- 3 input functions                    ; 1            ;
-;     -- <=2 input functions                  ; 0            ;
-;                                             ;              ;
-; Logic elements by mode                      ;              ;
-;     -- normal mode                          ; 5            ;
-;     -- arithmetic mode                      ; 0            ;
-;                                             ;              ;
-; Total registers                             ; 0            ;
-;     -- Dedicated logic registers            ; 0            ;
-;     -- I/O registers                        ; 0            ;
-;                                             ;              ;
-; I/O pins                                    ; 291          ;
-;                                             ;              ;
-; Embedded Multiplier 9-bit elements          ; 0            ;
-;                                             ;              ;
-; Maximum fan-out node                        ; sel[0]~input ;
-; Maximum fan-out                             ; 3            ;
-; Total fan-out                               ; 311          ;
-; Average fan-out                             ; 0.53         ;
-+---------------------------------------------+--------------+
++----------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                          ;
++---------------------------------------------+------------------------+
+; Resource                                    ; Usage                  ;
++---------------------------------------------+------------------------+
+; Estimated Total logic elements              ; 483                    ;
+;                                             ;                        ;
+; Total combinational functions               ; 483                    ;
+; Logic element usage by number of LUT inputs ;                        ;
+;     -- 4 input functions                    ; 218                    ;
+;     -- 3 input functions                    ; 220                    ;
+;     -- <=2 input functions                  ; 45                     ;
+;                                             ;                        ;
+; Logic elements by mode                      ;                        ;
+;     -- normal mode                          ; 437                    ;
+;     -- arithmetic mode                      ; 46                     ;
+;                                             ;                        ;
+; Total registers                             ; 0                      ;
+;     -- Dedicated logic registers            ; 0                      ;
+;     -- I/O registers                        ; 0                      ;
+;                                             ;                        ;
+; I/O pins                                    ; 109                    ;
+;                                             ;                        ;
+; Embedded Multiplier 9-bit elements          ; 0                      ;
+;                                             ;                        ;
+; Maximum fan-out node                        ; ctrl_shiftamt[1]~input ;
+; Maximum fan-out                             ; 76                     ;
+; Total fan-out                               ; 1760                   ;
+; Average fan-out                             ; 2.51                   ;
++---------------------------------------------+------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                   ;
-+--------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------+--------------+--------------+
-; Compilation Hierarchy Node           ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                  ; Entity Name  ; Library Name ;
-+--------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------+--------------+--------------+
-; |mux_8to1_32b                        ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 291  ; 0            ; |mux_8to1_32b                                                        ; mux_8to1_32b ; work         ;
-;    |mux_4to1_32b:mux_4to1_top|       ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mux_8to1_32b|mux_4to1_32b:mux_4to1_top                              ; mux_4to1_32b ; work         ;
-;       |mux_2to1_32b:mux_2to1_result| ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mux_8to1_32b|mux_4to1_32b:mux_4to1_top|mux_2to1_32b:mux_2to1_result ; mux_2to1_32b ; work         ;
-+--------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------+--------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                 ;
++----------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------+----------------+--------------+
+; Compilation Hierarchy Node                               ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                          ; Entity Name    ; Library Name ;
++----------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------+----------------+--------------+
+; |alu                                                     ; 483 (31)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 109  ; 0            ; |alu                                                                         ; alu            ; work         ;
+;    |barrel_shifter:shifter|                              ; 212 (10)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter                                                  ; barrel_shifter ; work         ;
+;       |mux_2b:shifter_left_sel[0].shifter_left[1].m1|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[0].shifter_left[1].m1    ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[0].shifter_left[26].m1|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[0].shifter_left[26].m1   ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[0].shifter_left[27].m1|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[0].shifter_left[27].m1   ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[0].shifter_left[28].m1|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[0].shifter_left[28].m1   ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[0].shifter_left[29].m1|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[0].shifter_left[29].m1   ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[1].shifter_left[10].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[10].m3   ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[1].shifter_left[11].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[11].m3   ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[1].shifter_left[12].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[12].m3   ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[1].shifter_left[13].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[13].m3   ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[1].shifter_left[14].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[14].m3   ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[1].shifter_left[15].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[15].m3   ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[1].shifter_left[16].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[16].m3   ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[1].shifter_left[17].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[17].m3   ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[1].shifter_left[18].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[18].m3   ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[1].shifter_left[19].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[19].m3   ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[1].shifter_left[20].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[20].m3   ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[1].shifter_left[21].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[21].m3   ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[1].shifter_left[22].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[22].m3   ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[1].shifter_left[23].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[23].m3   ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[1].shifter_left[24].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[24].m3   ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[1].shifter_left[25].m3|   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[25].m3   ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[1].shifter_left[26].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[26].m3   ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[1].shifter_left[27].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[27].m3   ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[1].shifter_left[2].m3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[2].m3    ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[1].shifter_left[3].m3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[3].m3    ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[1].shifter_left[4].m3|    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[4].m3    ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[1].shifter_left[5].m3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[5].m3    ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[1].shifter_left[6].m3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[6].m3    ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[1].shifter_left[7].m3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[7].m3    ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[1].shifter_left[8].m3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[8].m3    ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[1].shifter_left[9].m3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[9].m3    ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[2].shifter_left[0].m2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[0].m2    ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[2].shifter_left[10].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[10].m3   ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[2].shifter_left[11].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[11].m3   ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[2].shifter_left[12].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[12].m3   ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[2].shifter_left[13].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[13].m3   ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[2].shifter_left[14].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[14].m3   ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[2].shifter_left[15].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[15].m3   ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[2].shifter_left[16].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[16].m3   ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[2].shifter_left[17].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[17].m3   ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[2].shifter_left[18].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[18].m3   ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[2].shifter_left[19].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[19].m3   ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[2].shifter_left[20].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[20].m3   ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[2].shifter_left[21].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[21].m3   ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[2].shifter_left[22].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[22].m3   ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[2].shifter_left[23].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[23].m3   ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[2].shifter_left[4].m3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[4].m3    ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[2].shifter_left[9].m3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[9].m3    ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[3].shifter_left[0].m2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[0].m2    ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[3].shifter_left[10].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[10].m3   ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[3].shifter_left[11].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[11].m3   ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[3].shifter_left[12].m3|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[12].m3   ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[3].shifter_left[13].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[13].m3   ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[3].shifter_left[14].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[14].m3   ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[3].shifter_left[15].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[15].m3   ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[3].shifter_left[16].m3|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[16].m3   ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[3].shifter_left[1].m2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[1].m2    ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[3].shifter_left[2].m2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[2].m2    ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[3].shifter_left[30].m3|   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[30].m3   ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[3].shifter_left[3].m2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[3].m2    ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[3].shifter_left[4].m2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[4].m2    ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[3].shifter_left[5].m2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[5].m2    ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[3].shifter_left[6].m2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[6].m2    ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[3].shifter_left[7].m2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[7].m2    ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[3].shifter_left[8].m3|    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[8].m3    ; mux_2b         ; work         ;
+;       |mux_2b:shifter_left_sel[3].shifter_left[9].m3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[9].m3    ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[0].shifter_right[29].m5| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[0].shifter_right[29].m5 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[0].shifter_right[2].m5|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[0].shifter_right[2].m5  ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[0].shifter_right[3].m5|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[0].shifter_right[3].m5  ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[0].shifter_right[4].m5|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[0].shifter_right[4].m5  ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[0].shifter_right[5].m5|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[0].shifter_right[5].m5  ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[1].shifter_right[10].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[10].m7 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[1].shifter_right[11].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[11].m7 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[1].shifter_right[12].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[12].m7 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[1].shifter_right[13].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[13].m7 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[1].shifter_right[14].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[14].m7 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[1].shifter_right[15].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[15].m7 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[1].shifter_right[16].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[16].m7 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[1].shifter_right[17].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[17].m7 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[1].shifter_right[18].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[18].m7 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[1].shifter_right[19].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[19].m7 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[1].shifter_right[20].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[20].m7 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[1].shifter_right[21].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[21].m7 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[1].shifter_right[22].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[22].m7 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[1].shifter_right[23].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[23].m7 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[1].shifter_right[24].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[24].m7 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[1].shifter_right[25].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[25].m7 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[1].shifter_right[26].m7| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[26].m7 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[1].shifter_right[27].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[27].m7 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[1].shifter_right[28].m7| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[28].m7 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[1].shifter_right[4].m7|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[4].m7  ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[1].shifter_right[5].m7|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[5].m7  ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[1].shifter_right[6].m7|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[6].m7  ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[1].shifter_right[7].m7|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[7].m7  ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[1].shifter_right[8].m7|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[8].m7  ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[1].shifter_right[9].m7|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[1].shifter_right[9].m7  ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[2].shifter_right[10].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[2].shifter_right[10].m7 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[2].shifter_right[11].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[2].shifter_right[11].m7 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[2].shifter_right[12].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[2].shifter_right[12].m7 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[2].shifter_right[13].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[2].shifter_right[13].m7 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[2].shifter_right[14].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[2].shifter_right[14].m7 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[2].shifter_right[15].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[2].shifter_right[15].m7 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[2].shifter_right[16].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[2].shifter_right[16].m7 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[2].shifter_right[17].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[2].shifter_right[17].m7 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[2].shifter_right[18].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[2].shifter_right[18].m7 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[2].shifter_right[19].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[2].shifter_right[19].m7 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[2].shifter_right[20].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[2].shifter_right[20].m7 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[2].shifter_right[21].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[2].shifter_right[21].m7 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[2].shifter_right[22].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[2].shifter_right[22].m7 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[2].shifter_right[23].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[2].shifter_right[23].m7 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[2].shifter_right[25].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[2].shifter_right[25].m7 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[2].shifter_right[26].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[2].shifter_right[26].m7 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[2].shifter_right[8].m7|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[2].shifter_right[8].m7  ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[2].shifter_right[9].m7|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[2].shifter_right[9].m7  ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[3].shifter_right[16].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[3].shifter_right[16].m7 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[3].shifter_right[17].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[3].shifter_right[17].m7 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[3].shifter_right[18].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[3].shifter_right[18].m7 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[3].shifter_right[19].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[3].shifter_right[19].m7 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[3].shifter_right[20].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[3].shifter_right[20].m7 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[3].shifter_right[21].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[3].shifter_right[21].m7 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[3].shifter_right[22].m7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[3].shifter_right[22].m7 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[3].shifter_right[23].m7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[3].shifter_right[23].m7 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[3].shifter_right[24].m6| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[3].shifter_right[24].m6 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[3].shifter_right[25].m6| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[3].shifter_right[25].m6 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[3].shifter_right[26].m6| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[3].shifter_right[26].m6 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[3].shifter_right[27].m6| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[3].shifter_right[27].m6 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[3].shifter_right[28].m6| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[3].shifter_right[28].m6 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[3].shifter_right[29].m6| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[3].shifter_right[29].m6 ; mux_2b         ; work         ;
+;       |mux_2b:shifter_right_sel[3].shifter_right[30].m6| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|barrel_shifter:shifter|mux_2b:shifter_right_sel[3].shifter_right[30].m6 ; mux_2b         ; work         ;
+;    |csa_32b_by_rca:adder|                                ; 55 (3)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|csa_32b_by_rca:adder                                                    ; csa_32b_by_rca ; work         ;
+;       |rca_16b:rca16b_1|                                 ; 19 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|csa_32b_by_rca:adder|rca_16b:rca16b_1                                   ; rca_16b        ; work         ;
+;          |rca_4b:rca4b_0|                                ; 19 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|csa_32b_by_rca:adder|rca_16b:rca16b_1|rca_4b:rca4b_0                    ; rca_4b         ; work         ;
+;             |full_adder:FA_0|                            ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|csa_32b_by_rca:adder|rca_16b:rca16b_1|rca_4b:rca4b_0|full_adder:FA_0    ; full_adder     ; work         ;
+;             |full_adder:FA_1|                            ; 17 (17)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|csa_32b_by_rca:adder|rca_16b:rca16b_1|rca_4b:rca4b_0|full_adder:FA_1    ; full_adder     ; work         ;
+;       |rca_16b:rca16b_2_0|                               ; 17 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|csa_32b_by_rca:adder|rca_16b:rca16b_2_0                                 ; rca_16b        ; work         ;
+;          |rca_4b:rca4b_0|                                ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|csa_32b_by_rca:adder|rca_16b:rca16b_2_0|rca_4b:rca4b_0                  ; rca_4b         ; work         ;
+;             |full_adder:FA_1|                            ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|csa_32b_by_rca:adder|rca_16b:rca16b_2_0|rca_4b:rca4b_0|full_adder:FA_1  ; full_adder     ; work         ;
+;          |rca_4b:rca4b_3|                                ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|csa_32b_by_rca:adder|rca_16b:rca16b_2_0|rca_4b:rca4b_3                  ; rca_4b         ; work         ;
+;             |full_adder:FA_3|                            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|csa_32b_by_rca:adder|rca_16b:rca16b_2_0|rca_4b:rca4b_3|full_adder:FA_3  ; full_adder     ; work         ;
+;       |rca_16b:rca16b_2_1|                               ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|csa_32b_by_rca:adder|rca_16b:rca16b_2_1                                 ; rca_16b        ; work         ;
+;          |rca_4b:rca4b_0|                                ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|csa_32b_by_rca:adder|rca_16b:rca16b_2_1|rca_4b:rca4b_0                  ; rca_4b         ; work         ;
+;             |full_adder:FA_1|                            ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|csa_32b_by_rca:adder|rca_16b:rca16b_2_1|rca_4b:rca4b_0|full_adder:FA_1  ; full_adder     ; work         ;
+;    |mux_4to1_32b:selecter|                               ; 185 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|mux_4to1_32b:selecter                                                   ; mux_4to1_32b   ; work         ;
+;       |mux_2to1_32b:mux_2to1_result|                     ; 185 (185)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|mux_4to1_32b:selecter|mux_2to1_32b:mux_2to1_result                      ; mux_2to1_32b   ; work         ;
++----------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------+----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -239,60 +425,414 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "mux_2to1_32b:mux_2to1_result"                                                                                                                ;
-+------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                                                                                       ;
-+------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-; in0  ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "in0[31..1]" will be connected to GND. ;
-; in1  ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "in1[31..1]" will be connected to GND. ;
-+------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
+; 9:1                ; 8 bits    ; 48 LEs        ; 32 LEs               ; 16 LEs                 ; No         ; |alu|mux_4to1_32b:selecter|mux_2to1_32b:mux_2to1_result|out[15] ;
+; 10:1               ; 7 bits    ; 42 LEs        ; 42 LEs               ; 0 LEs                  ; No         ; |alu|mux_4to1_32b:selecter|mux_2to1_32b:mux_2to1_result|out[23] ;
+; 10:1               ; 4 bits    ; 24 LEs        ; 20 LEs               ; 4 LEs                  ; No         ; |alu|mux_4to1_32b:selecter|mux_2to1_32b:mux_2to1_result|out[4]  ;
+; 11:1               ; 4 bits    ; 28 LEs        ; 24 LEs               ; 4 LEs                  ; No         ; |alu|mux_4to1_32b:selecter|mux_2to1_32b:mux_2to1_result|out[27] ;
+; 11:1               ; 2 bits    ; 14 LEs        ; 12 LEs               ; 2 LEs                  ; No         ; |alu|mux_4to1_32b:selecter|mux_2to1_32b:mux_2to1_result|out[2]  ;
+; 12:1               ; 2 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |alu|mux_4to1_32b:selecter|mux_2to1_32b:mux_2to1_result|out[29] ;
+; 12:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |alu|mux_4to1_32b:selecter|mux_2to1_32b:mux_2to1_result|out[1]  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "mux_4to1_32b:mux_4to1_bottom"                                                                                            ;
-+------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                                                                  ;
-+------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
-; out  ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (1 bits) it drives; bit(s) "out[31..1]" have no fanouts ;
-+------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: barrel_shifter:shifter ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; N              ; 32    ; Signed Integer                             ;
+; M              ; 5     ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "mux_4to1_32b:mux_4to1_top|mux_2to1_32b:mux_2to1_result"                                                                                      ;
-+------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                                                                                       ;
-+------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-; in0  ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "in0[31..1]" will be connected to GND. ;
-; in1  ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "in1[31..1]" will be connected to GND. ;
-+------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
++---------------------------------------------------+
+; Port Connectivity Checks: "mux_4to1_32b:selecter" ;
++------+-------+----------+-------------------------+
+; Port ; Type  ; Severity ; Details                 ;
++------+-------+----------+-------------------------+
+; in3  ; Input ; Info     ; Stuck at GND            ;
++------+-------+----------+-------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "mux_4to1_32b:mux_4to1_top|mux_2to1_32b:mux_2to1_bottom"                                                                  ;
-+------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                                                                  ;
-+------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
-; out  ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (1 bits) it drives; bit(s) "out[31..1]" have no fanouts ;
-+------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[15].m2"                                                                                                             ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "mux_4to1_32b:mux_4to1_top|mux_2to1_32b:mux_2to1_top"                                                                     ;
-+------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                                                                  ;
-+------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
-; out  ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (1 bits) it drives; bit(s) "out[31..1]" have no fanouts ;
-+------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[14].m2"                                                                                                             ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "mux_4to1_32b:mux_4to1_top"                                                                                               ;
-+------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                                                                  ;
-+------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
-; out  ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (1 bits) it drives; bit(s) "out[31..1]" have no fanouts ;
-+------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[13].m2"                                                                                                             ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[12].m2"                                                                                                             ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[11].m2"                                                                                                             ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[10].m2"                                                                                                             ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[9].m2"                                                                                                              ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[8].m2"                                                                                                              ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[7].m2"                                                                                                              ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[6].m2"                                                                                                              ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[5].m2"                                                                                                              ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[4].m2"                                                                                                              ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[3].m2"                                                                                                              ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[2].m2"                                                                                                              ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[1].m2"                                                                                                              ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[4].shifter_left[0].m2"                                                                                                              ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[7].m2"                                                                                                              ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[6].m2"                                                                                                              ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[5].m2"                                                                                                              ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[4].m2"                                                                                                              ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[3].m2"                                                                                                              ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[2].m2"                                                                                                              ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[1].m2"                                                                                                              ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[3].shifter_left[0].m2"                                                                                                              ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[3].m2"                                                                                                              ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[2].m2"                                                                                                              ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[1].m2"                                                                                                              ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[2].shifter_left[0].m2"                                                                                                              ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[1].m2"                                                                                                              ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[1].shifter_left[0].m2"                                                                                                              ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "barrel_shifter:shifter|mux_2b:shifter_left_sel[0].shifter_left[0].m0"                                                                                                              ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "csa_32b_by_rca:adder|rca_16b:rca16b_2_1"                                                                                                                                              ;
++----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                                                                                                                                            ;
++----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; c_in     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; c_in[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "csa_32b_by_rca:adder|rca_16b:rca16b_2_0"                                                                                                                                              ;
++----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                                                                                                                                            ;
++----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; c_in     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; c_in[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "csa_32b_by_rca:adder|rca_16b:rca16b_1|rca_4b:rca4b_2"                                      ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; last_bit_ci ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "csa_32b_by_rca:adder|rca_16b:rca16b_1|rca_4b:rca4b_1"                                      ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; last_bit_ci ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "csa_32b_by_rca:adder|rca_16b:rca16b_1|rca_4b:rca4b_0"                                      ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; last_bit_ci ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "csa_32b_by_rca:adder|rca_16b:rca16b_1"                                                     ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; last_bit_ci ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "csa_32b_by_rca:adder"                                                                ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; c_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -300,15 +840,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 291                         ;
-; cycloneiii_lcell_comb ; 6                           ;
-;     normal            ; 6                           ;
-;         0 data inputs ; 1                           ;
-;         3 data inputs ; 1                           ;
-;         4 data inputs ; 4                           ;
+; boundary_port         ; 109                         ;
+; cycloneiii_lcell_comb ; 483                         ;
+;     arith             ; 46                          ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 45                          ;
+;     normal            ; 437                         ;
+;         0 data inputs ; 3                           ;
+;         2 data inputs ; 41                          ;
+;         3 data inputs ; 175                         ;
+;         4 data inputs ; 218                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 2.47                        ;
+; Max LUT depth         ; 8.60                        ;
+; Average LUT depth     ; 6.91                        ;
 +-----------------------+-----------------------------+
 
 
@@ -317,7 +861,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -327,349 +871,79 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Wed Sep 22 19:17:14 2021
+    Info: Processing started: Thu Sep 23 21:33:17 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file barrel_shifter_tb.v
-    Info (12023): Found entity 1: barrel_shifter_tb File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/barrel_shifter_tb.v Line: 3
+    Info (12023): Found entity 1: barrel_shifter_tb File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/barrel_shifter_tb.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file bitwise_or_32b_tb.v
-    Info (12023): Found entity 1: bitwise_or_32b_tb File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/bitwise_or_32b_tb.v Line: 3
+    Info (12023): Found entity 1: bitwise_or_32b_tb File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/bitwise_or_32b_tb.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file bitwise_or_32b.v
-    Info (12023): Found entity 1: bitwise_or_32b File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/bitwise_or_32b.v Line: 1
+    Info (12023): Found entity 1: bitwise_or_32b File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/bitwise_or_32b.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file bitwise_and_32b_tb.v
-    Info (12023): Found entity 1: bitwise_and_32b_tb File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/bitwise_and_32b_tb.v Line: 3
+    Info (12023): Found entity 1: bitwise_and_32b_tb File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/bitwise_and_32b_tb.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file bitwise_and_32b.v
-    Info (12023): Found entity 1: bitwise_and_32b File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/bitwise_and_32b.v Line: 1
+    Info (12023): Found entity 1: bitwise_and_32b File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/bitwise_and_32b.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file rca_16b.v
-    Info (12023): Found entity 1: rca_16b File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/rca_16b.v Line: 1
+    Info (12023): Found entity 1: rca_16b File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/rca_16b.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file rca_4b.v
-    Info (12023): Found entity 1: rca_4b File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/rca_4b.v Line: 1
+    Info (12023): Found entity 1: rca_4b File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/rca_4b.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file fulladder_tb.v
-    Info (12023): Found entity 1: fulladder_tb File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/fulladder_tb.v Line: 3
+    Info (12023): Found entity 1: fulladder_tb File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/fulladder_tb.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file full_adder.v
-    Info (12023): Found entity 1: full_adder File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/full_adder.v Line: 1
+    Info (12023): Found entity 1: full_adder File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/full_adder.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file csa_32b_by_rca.v
-    Info (12023): Found entity 1: csa_32b_by_rca File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/csa_32b_by_rca.v Line: 1
+    Info (12023): Found entity 1: csa_32b_by_rca File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/csa_32b_by_rca.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu_tb.v
-    Info (12023): Found entity 1: alu_tb File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/alu_tb.v Line: 3
+    Info (12023): Found entity 1: alu_tb File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/alu_tb.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file alu.v
-    Info (12023): Found entity 1: alu File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/alu.v Line: 1
+    Info (12023): Found entity 1: alu File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/alu.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file adder_tb.v
-    Info (12023): Found entity 1: adder_tb File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/adder_tb.v Line: 3
+    Info (12023): Found entity 1: adder_tb File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/adder_tb.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file mux_2b.v
-    Info (12023): Found entity 1: mux_2b File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v Line: 1
+    Info (12023): Found entity 1: mux_2b File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/mux_2b.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file barrel_shifter.v
-    Info (12023): Found entity 1: barrel_shifter File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/barrel_shifter.v Line: 1
+    Info (12023): Found entity 1: barrel_shifter File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/barrel_shifter.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux_8to1_32b.v
-    Info (12023): Found entity 1: mux_8to1_32b File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 1
+    Info (12023): Found entity 1: mux_8to1_32b File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux_4to1_32b.v
-    Info (12023): Found entity 1: mux_4to1_32b File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_4to1_32b.v Line: 1
+    Info (12023): Found entity 1: mux_4to1_32b File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/mux_4to1_32b.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux_2to1_32b.v
-    Info (12023): Found entity 1: mux_2to1_32b File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2to1_32b.v Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at fulladder_tb.v(15): created implicit net for "c_out" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/fulladder_tb.v Line: 15
-Warning (10236): Verilog HDL Implicit Net warning at alu.v(22): created implicit net for "c_out" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/alu.v Line: 22
-Warning (10236): Verilog HDL Implicit Net warning at adder_tb.v(15): created implicit net for "c_out" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/adder_tb.v Line: 15
-Info (12127): Elaborating entity "mux_8to1_32b" for the top level hierarchy
-Info (12128): Elaborating entity "mux_4to1_32b" for hierarchy "mux_4to1_32b:mux_4to1_top" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 9
-Info (12128): Elaborating entity "mux_2to1_32b" for hierarchy "mux_4to1_32b:mux_4to1_top|mux_2to1_32b:mux_2to1_top" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_4to1_32b.v Line: 9
-Warning (12010): Port "ordered port 1" on the entity instantiation of "mux_2to1_result" is connected to a signal of width 1. The formal width of the signal in the module is 32.  The extra bits will be driven by GND. File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_4to1_32b.v Line: 12
-Warning (12010): Port "ordered port 2" on the entity instantiation of "mux_2to1_result" is connected to a signal of width 1. The formal width of the signal in the module is 32.  The extra bits will be driven by GND. File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_4to1_32b.v Line: 12
-Warning (12030): Port "ordered port 0" on the entity instantiation of "mux_2to1_bottom" is connected to a signal of width 1. The formal width of the signal in the module is 32.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_4to1_32b.v Line: 10
-Warning (12030): Port "ordered port 0" on the entity instantiation of "mux_2to1_top" is connected to a signal of width 1. The formal width of the signal in the module is 32.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_4to1_32b.v Line: 9
-Warning (12241): 6 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "out[1]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
-    Warning (13410): Pin "out[2]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
-    Warning (13410): Pin "out[3]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
-    Warning (13410): Pin "out[4]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
-    Warning (13410): Pin "out[5]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
-    Warning (13410): Pin "out[6]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
-    Warning (13410): Pin "out[7]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
-    Warning (13410): Pin "out[8]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
-    Warning (13410): Pin "out[9]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
-    Warning (13410): Pin "out[10]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
-    Warning (13410): Pin "out[11]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
-    Warning (13410): Pin "out[12]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
-    Warning (13410): Pin "out[13]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
-    Warning (13410): Pin "out[14]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
-    Warning (13410): Pin "out[15]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
-    Warning (13410): Pin "out[16]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
-    Warning (13410): Pin "out[17]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
-    Warning (13410): Pin "out[18]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
-    Warning (13410): Pin "out[19]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
-    Warning (13410): Pin "out[20]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
-    Warning (13410): Pin "out[21]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
-    Warning (13410): Pin "out[22]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
-    Warning (13410): Pin "out[23]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
-    Warning (13410): Pin "out[24]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
-    Warning (13410): Pin "out[25]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
-    Warning (13410): Pin "out[26]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
-    Warning (13410): Pin "out[27]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
-    Warning (13410): Pin "out[28]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
-    Warning (13410): Pin "out[29]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
-    Warning (13410): Pin "out[30]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
-    Warning (13410): Pin "out[31]" is stuck at GND File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 5
+    Info (12023): Found entity 1: mux_2to1_32b File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/mux_2to1_32b.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at fulladder_tb.v(15): created implicit net for "c_out" File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/fulladder_tb.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at alu.v(31): created implicit net for "c_out" File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/alu.v Line: 31
+Warning (10236): Verilog HDL Implicit Net warning at adder_tb.v(15): created implicit net for "c_out" File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/adder_tb.v Line: 15
+Info (12127): Elaborating entity "alu" for the top level hierarchy
+Warning (10230): Verilog HDL assignment warning at alu.v(29): truncated value with size 32 to match size of target (1) File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/alu.v Line: 29
+Warning (10739): Verilog HDL warning at alu.v(62): actual bit length 32 differs from formal bit length 1 File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/alu.v Line: 62
+Info (12128): Elaborating entity "csa_32b_by_rca" for hierarchy "csa_32b_by_rca:adder" File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/alu.v Line: 31
+Info (12128): Elaborating entity "rca_16b" for hierarchy "csa_32b_by_rca:adder|rca_16b:rca16b_1" File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/csa_32b_by_rca.v Line: 15
+Info (12128): Elaborating entity "rca_4b" for hierarchy "csa_32b_by_rca:adder|rca_16b:rca16b_1|rca_4b:rca4b_0" File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/rca_16b.v Line: 14
+Info (12128): Elaborating entity "full_adder" for hierarchy "csa_32b_by_rca:adder|rca_16b:rca16b_1|rca_4b:rca4b_0|full_adder:FA_0" File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/rca_4b.v Line: 9
+Info (12128): Elaborating entity "bitwise_and_32b" for hierarchy "bitwise_and_32b:and32b" File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/alu.v Line: 34
+Info (12128): Elaborating entity "bitwise_or_32b" for hierarchy "bitwise_or_32b:or32b" File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/alu.v Line: 37
+Info (12128): Elaborating entity "barrel_shifter" for hierarchy "barrel_shifter:shifter" File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/alu.v Line: 41
+Info (12128): Elaborating entity "mux_2b" for hierarchy "barrel_shifter:shifter|mux_2b:shifter_left_sel[0].shifter_left[0].m0" File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/barrel_shifter.v Line: 24
+Info (12128): Elaborating entity "mux_2to1_32b" for hierarchy "mux_2to1_32b:logic_sel" File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/alu.v Line: 44
+Info (12128): Elaborating entity "mux_4to1_32b" for hierarchy "mux_4to1_32b:selecter" File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/alu.v Line: 50
+Info (13014): Ignored 1 buffer(s)
+    Info (13019): Ignored 1 SOFT buffer(s)
+Warning (12241): 33 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 248 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "in0[1]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in0[2]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in0[3]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in0[4]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in0[5]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in0[6]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in0[7]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in0[8]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in0[9]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in0[10]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in0[11]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in0[12]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in0[13]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in0[14]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in0[15]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in0[16]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in0[17]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in0[18]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in0[19]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in0[20]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in0[21]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in0[22]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in0[23]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in0[24]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in0[25]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in0[26]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in0[27]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in0[28]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in0[29]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in0[30]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in0[31]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in1[1]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in1[2]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in1[3]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in1[4]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in1[5]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in1[6]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in1[7]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in1[8]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in1[9]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in1[10]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in1[11]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in1[12]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in1[13]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in1[14]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in1[15]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in1[16]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in1[17]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in1[18]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in1[19]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in1[20]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in1[21]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in1[22]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in1[23]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in1[24]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in1[25]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in1[26]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in1[27]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in1[28]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in1[29]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in1[30]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in1[31]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in2[1]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in2[2]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in2[3]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in2[4]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in2[5]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in2[6]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in2[7]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in2[8]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in2[9]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in2[10]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in2[11]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in2[12]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in2[13]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in2[14]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in2[15]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in2[16]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in2[17]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in2[18]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in2[19]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in2[20]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in2[21]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in2[22]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in2[23]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in2[24]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in2[25]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in2[26]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in2[27]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in2[28]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in2[29]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in2[30]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in2[31]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in3[1]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in3[2]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in3[3]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in3[4]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in3[5]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in3[6]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in3[7]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in3[8]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in3[9]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in3[10]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in3[11]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in3[12]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in3[13]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in3[14]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in3[15]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in3[16]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in3[17]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in3[18]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in3[19]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in3[20]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in3[21]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in3[22]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in3[23]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in3[24]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in3[25]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in3[26]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in3[27]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in3[28]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in3[29]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in3[30]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in3[31]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in4[1]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in4[2]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in4[3]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in4[4]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in4[5]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in4[6]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in4[7]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in4[8]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in4[9]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in4[10]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in4[11]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in4[12]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in4[13]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in4[14]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in4[15]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in4[16]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in4[17]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in4[18]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in4[19]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in4[20]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in4[21]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in4[22]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in4[23]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in4[24]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in4[25]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in4[26]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in4[27]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in4[28]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in4[29]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in4[30]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in4[31]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in5[1]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in5[2]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in5[3]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in5[4]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in5[5]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in5[6]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in5[7]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in5[8]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in5[9]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in5[10]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in5[11]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in5[12]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in5[13]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in5[14]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in5[15]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in5[16]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in5[17]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in5[18]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in5[19]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in5[20]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in5[21]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in5[22]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in5[23]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in5[24]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in5[25]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in5[26]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in5[27]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in5[28]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in5[29]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in5[30]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in5[31]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in6[1]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in6[2]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in6[3]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in6[4]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in6[5]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in6[6]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in6[7]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in6[8]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in6[9]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in6[10]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in6[11]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in6[12]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in6[13]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in6[14]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in6[15]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in6[16]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in6[17]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in6[18]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in6[19]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in6[20]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in6[21]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in6[22]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in6[23]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in6[24]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in6[25]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in6[26]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in6[27]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in6[28]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in6[29]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in6[30]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in6[31]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in7[1]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in7[2]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in7[3]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in7[4]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in7[5]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in7[6]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in7[7]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in7[8]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in7[9]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in7[10]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in7[11]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in7[12]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in7[13]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in7[14]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in7[15]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in7[16]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in7[17]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in7[18]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in7[19]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in7[20]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in7[21]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in7[22]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in7[23]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in7[24]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in7[25]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in7[26]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in7[27]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in7[28]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in7[29]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in7[30]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-    Warning (15610): No output dependent on input pin "in7[31]" File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_8to1_32b.v Line: 3
-Info (21057): Implemented 296 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 259 input pins
-    Info (21059): Implemented 32 output pins
-    Info (21061): Implemented 5 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 290 warnings
-    Info: Peak virtual memory: 4947 megabytes
-    Info: Processing ended: Wed Sep 22 19:17:28 2021
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:21
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "ctrl_ALUopcode[3]" File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/alu.v Line: 4
+    Warning (15610): No output dependent on input pin "ctrl_ALUopcode[4]" File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/alu.v Line: 4
+Info (21057): Implemented 592 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 74 input pins
+    Info (21059): Implemented 35 output pins
+    Info (21061): Implemented 483 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 4975 megabytes
+    Info: Processing ended: Thu Sep 23 21:33:29 2021
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:27
 
 

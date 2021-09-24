@@ -1,5 +1,5 @@
 Flow report for ALU
-Wed Sep 22 19:17:28 2021
+Thu Sep 23 21:34:21 2021
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -41,22 +41,22 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Wed Sep 22 19:17:28 2021       ;
+; Flow Status                        ; Successful - Thu Sep 23 21:34:21 2021       ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; ALU                                         ;
-; Top-level Entity Name              ; mux_8to1_32b                                ;
+; Top-level Entity Name              ; alu                                         ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 5                                           ;
-;     Total combinational functions  ; 5                                           ;
-;     Dedicated logic registers      ; 0                                           ;
+; Total logic elements               ; 483 / 114,480 ( < 1 % )                     ;
+;     Total combinational functions  ; 483 / 114,480 ( < 1 % )                     ;
+;     Dedicated logic registers      ; 0 / 114,480 ( 0 % )                         ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 291                                         ;
+; Total pins                         ; 109 / 529 ( 21 % )                          ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
+; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                       ;
+; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                             ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -65,71 +65,86 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/22/2021 19:17:14 ;
+; Start date & time ; 09/23/2021 21:33:18 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ALU                 ;
 +-------------------+---------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                 ;
-+--------------------------------------+---------------------------------------+---------------+--------------+--------------------+
-; Assignment Name                      ; Value                                 ; Default Value ; Entity Name  ; Section Id         ;
-+--------------------------------------+---------------------------------------+---------------+--------------+--------------------+
-; COMPILER_SIGNATURE_ID                ; 345050798422.163235263409068          ; --            ; --           ; --                 ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --           ; barrel_shifter_tb  ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --           ; bitwise_or_32b_tb  ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --           ; bitwise_and_32b_tb ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; barrel_shifter_tb                     ; --            ; --           ; eda_simulation     ;
-; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                           ; --            ; --           ; eda_simulation     ;
-; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)             ; <None>        ; --           ; --                 ;
-; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                       ; --            ; --           ; eda_simulation     ;
-; EDA_TEST_BENCH_FILE                  ; barrel_shifter_tb.v                   ; --            ; --           ; barrel_shifter_tb  ;
-; EDA_TEST_BENCH_FILE                  ; bitwise_or_32b_tb.v                   ; --            ; --           ; bitwise_or_32b_tb  ;
-; EDA_TEST_BENCH_FILE                  ; bitwise_and_32b_tb.v                  ; --            ; --           ; bitwise_and_32b_tb ;
-; EDA_TEST_BENCH_MODULE_NAME           ; barrel_shifter_tb                     ; --            ; --           ; barrel_shifter_tb  ;
-; EDA_TEST_BENCH_MODULE_NAME           ; bitwise_or_32b_tb                     ; --            ; --           ; bitwise_or_32b_tb  ;
-; EDA_TEST_BENCH_MODULE_NAME           ; bitwise_and_32b_tb                    ; --            ; --           ; bitwise_and_32b_tb ;
-; EDA_TEST_BENCH_NAME                  ; bitwise_or_32b_tb                     ; --            ; --           ; eda_simulation     ;
-; EDA_TEST_BENCH_NAME                  ; bitwise_and_32b_tb                    ; --            ; --           ; eda_simulation     ;
-; EDA_TEST_BENCH_NAME                  ; barrel_shifter_tb                     ; --            ; --           ; eda_simulation     ;
-; EDA_TIME_SCALE                       ; 1 ps                                  ; --            ; --           ; eda_simulation     ;
-; MAX_CORE_JUNCTION_TEMP               ; 85                                    ; --            ; --           ; --                 ;
-; MIN_CORE_JUNCTION_TEMP               ; 0                                     ; --            ; --           ; --                 ;
-; NOMINAL_CORE_SUPPLY_VOLTAGE          ; 1.2V                                  ; --            ; --           ; --                 ;
-; PARTITION_COLOR                      ; 16764057                              ; --            ; mux_8to1_32b ; Top                ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                 ; --            ; mux_8to1_32b ; Top                ;
-; PARTITION_NETLIST_TYPE               ; SOURCE                                ; --            ; mux_8to1_32b ; Top                ;
-; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                   ; --            ; --           ; --                 ;
-; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --           ; --                 ;
-; PROJECT_OUTPUT_DIRECTORY             ; output_files                          ; --            ; --           ; --                 ;
-; TOP_LEVEL_ENTITY                     ; mux_8to1_32b                          ; ALU           ; --           ; --                 ;
-+--------------------------------------+---------------------------------------+---------------+--------------+--------------------+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                ;
++--------------------------------------+---------------------------------------+---------------+-------------+--------------------+
+; Assignment Name                      ; Value                                 ; Default Value ; Entity Name ; Section Id         ;
++--------------------------------------+---------------------------------------+---------------+-------------+--------------------+
+; COMPILER_SIGNATURE_ID                ; 220837866312987.163244719815268       ; --            ; --          ; --                 ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; barrel_shifter_tb  ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; bitwise_or_32b_tb  ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; bitwise_and_32b_tb ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; alu_tb             ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; alu_tb                                ; --            ; --          ; eda_simulation     ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                           ; --            ; --          ; eda_simulation     ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)             ; <None>        ; --          ; --                 ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                       ; --            ; --          ; eda_simulation     ;
+; EDA_TEST_BENCH_FILE                  ; barrel_shifter_tb.v                   ; --            ; --          ; barrel_shifter_tb  ;
+; EDA_TEST_BENCH_FILE                  ; bitwise_or_32b_tb.v                   ; --            ; --          ; bitwise_or_32b_tb  ;
+; EDA_TEST_BENCH_FILE                  ; bitwise_and_32b_tb.v                  ; --            ; --          ; bitwise_and_32b_tb ;
+; EDA_TEST_BENCH_FILE                  ; alu_tb.v                              ; --            ; --          ; alu_tb             ;
+; EDA_TEST_BENCH_MODULE_NAME           ; barrel_shifter_tb                     ; --            ; --          ; barrel_shifter_tb  ;
+; EDA_TEST_BENCH_MODULE_NAME           ; bitwise_or_32b_tb                     ; --            ; --          ; bitwise_or_32b_tb  ;
+; EDA_TEST_BENCH_MODULE_NAME           ; bitwise_and_32b_tb                    ; --            ; --          ; bitwise_and_32b_tb ;
+; EDA_TEST_BENCH_MODULE_NAME           ; alu_tb                                ; --            ; --          ; alu_tb             ;
+; EDA_TEST_BENCH_NAME                  ; bitwise_or_32b_tb                     ; --            ; --          ; eda_simulation     ;
+; EDA_TEST_BENCH_NAME                  ; bitwise_and_32b_tb                    ; --            ; --          ; eda_simulation     ;
+; EDA_TEST_BENCH_NAME                  ; barrel_shifter_tb                     ; --            ; --          ; eda_simulation     ;
+; EDA_TEST_BENCH_NAME                  ; alu_tb                                ; --            ; --          ; eda_simulation     ;
+; EDA_TIME_SCALE                       ; 1 ps                                  ; --            ; --          ; eda_simulation     ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                    ; --            ; --          ; --                 ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                     ; --            ; --          ; --                 ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE          ; 1.2V                                  ; --            ; --          ; --                 ;
+; PARTITION_COLOR                      ; 16764057                              ; --            ; alu         ; Top                ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                 ; --            ; alu         ; Top                ;
+; PARTITION_NETLIST_TYPE               ; SOURCE                                ; --            ; alu         ; Top                ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                   ; --            ; --          ; --                 ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --          ; --                 ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                          ; --            ; --          ; --                 ;
++--------------------------------------+---------------------------------------+---------------+-------------+--------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                        ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 4934 MB             ; 00:00:21                           ;
-; Total                ; 00:00:13     ; --                      ; --                  ; 00:00:21                           ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:12     ; 1.0                     ; 4975 MB             ; 00:00:27                           ;
+; Fitter                    ; 00:00:11     ; 1.0                     ; 5958 MB             ; 00:00:17                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 4891 MB             ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 5081 MB             ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4869 MB             ; 00:00:02                           ;
+; Total                     ; 00:00:30     ; --                      ; --                  ; 00:00:51                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+-----------------------------------------------------------------------------------+
-; Flow OS Summary                                                                   ;
-+----------------------+------------------+-----------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
-+----------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis ; vcm-21751        ; Windows 8 ; 6.2        ; x86_64         ;
-+----------------------+------------------+-----------+------------+----------------+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; LAPTOP-UI2HUKIH  ; Windows 8 ; 6.2        ; x86_64         ;
+; Fitter                    ; LAPTOP-UI2HUKIH  ; Windows 8 ; 6.2        ; x86_64         ;
+; Assembler                 ; LAPTOP-UI2HUKIH  ; Windows 8 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; LAPTOP-UI2HUKIH  ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; LAPTOP-UI2HUKIH  ; Windows 8 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU
+quartus_fit --read_settings_files=on --write_settings_files=off ALU -c ALU
+quartus_asm --read_settings_files=on --write_settings_files=off ALU -c ALU
+quartus_sta ALU -c ALU
+quartus_eda --read_settings_files=on --write_settings_files=off ALU -c ALU
 
 
 

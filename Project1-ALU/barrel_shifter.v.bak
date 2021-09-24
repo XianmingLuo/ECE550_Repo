@@ -1,0 +1,28 @@
+module barrel_shifter(out, in, shiftamt, left);
+
+	output out;
+	input in, shiftamt, left;
+	
+	wire [32 * 5-1:0] temp;
+	
+	
+	genvar i;
+	genvar j;
+	generate
+		for (i = 0; i < 5; i = i + 1) begin : shifter_left_sel
+			for (j = 0; j< 32; j = j + 1) begin : shifter_left
+				if (i == 0) begin
+					if (j <= i)
+						mux_2b(temp[i*32+j], in[j], 0, shiftamt[i]);
+					else
+						max_2b(temp[i*32+j], in[j], in[j-1], shiftamt[i]);
+					end
+				else begin
+					if (j <= i)
+						mux_2b(temp[i*32+j], temp[(i-1)*32+j], 0, shiftamt[i]);
+					else
+						mux_2b(temp[i*32+j], temp[(i-1)*32+j], temp[(i-1)*32+j-1], shiftamt[i]);
+					end
+		end
+	endgenerate
+	

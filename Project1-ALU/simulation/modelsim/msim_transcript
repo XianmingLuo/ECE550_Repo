@@ -1,115 +1,54 @@
-# Reading C:/altera_lite/16.0/modelsim_ase/tcl/vsim/pref.tcl
-# do ALU_run_msim_rtl_verilog.do
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
+# Reading E:/Quartus/modelsim_ase/tcl/vsim/pref.tcl
+# ERROR: No extended dataflow license exists
+# do ALU_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
 # }
-# vlib rtl_work
-# vmap work rtl_work
+# vlib gate_work
+# vmap work gate_work
 # Model Technology ModelSim ALTERA vmap 10.4d Lib Mapping Utility 2015.12 Dec 30 2015
-# vmap work rtl_work 
-# Copying C:/altera_lite/16.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# vmap work gate_work 
+# Copying E:/Quartus/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/bz82/Documents/ECE\ 550/ECE550_Repo/Project1-ALU {C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v}
+# vlog -vlog01compat -work work +incdir+. {ALU_min_1200mv_0c_fast.vo}
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 18:45:42 on Sep 22,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU" C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v 
-# -- Compiling module mux_2b
+# Start time: 21:34:36 on Sep 23,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." ALU_min_1200mv_0c_fast.vo 
+# -- Compiling module alu
 # 
 # Top level modules:
-# 	mux_2b
-# End time: 18:45:42 on Sep 22,2021, Elapsed time: 0:00:00
+# 	alu
+# End time: 21:34:36 on Sep 23,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/bz82/Documents/ECE\ 550/ECE550_Repo/Project1-ALU {C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/barrel_shifter.v}
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU {C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/alu_tb.v}
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 18:45:42 on Sep 22,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU" C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/barrel_shifter.v 
-# -- Compiling module barrel_shifter
+# Start time: 21:34:36 on Sep 23,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU" C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/alu_tb.v 
+# -- Compiling module alu_tb
+# ** Warning: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/alu_tb.v(743): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
 # 
 # Top level modules:
-# 	barrel_shifter
-# End time: 18:45:42 on Sep 22,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
+# 	alu_tb
+# End time: 21:34:36 on Sep 23,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/bz82/Documents/ECE\ 550/ECE550_Repo/Project1-ALU {C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/barrel_shifter_tb.v}
-# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 18:45:42 on Sep 22,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU" C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/barrel_shifter_tb.v 
-# -- Compiling module barrel_shifter_tb
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  alu_tb
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" alu_tb 
+# Start time: 21:34:36 on Sep 23,2021
+# Loading work.alu_tb
+# Loading work.alu
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# SDF 10.4d Compiler 2015.12 Dec 30 2015
 # 
-# Top level modules:
-# 	barrel_shifter_tb
-# End time: 18:45:42 on Sep 22,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  barrel_shifter_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" barrel_shifter_tb 
-# Start time: 18:45:42 on Sep 22,2021
-# Loading work.barrel_shifter_tb
-# Loading work.barrel_shifter
-# Loading work.mux_2b
-# ** Warning: (vsim-3015) C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/barrel_shifter.v(24): [PCDPC] - Port size (1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /barrel_shifter_tb/bs_0/shifter_left_sel[0]/shifter_left[0]/genblk1/genblk1/m0 File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v
-# ** Warning: (vsim-3015) C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/barrel_shifter.v(30): [PCDPC] - Port size (1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /barrel_shifter_tb/bs_0/shifter_left_sel[1]/shifter_left[0]/genblk1/genblk1/m2 File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v
-# ** Warning: (vsim-3015) C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/barrel_shifter.v(30): [PCDPC] - Port size (1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /barrel_shifter_tb/bs_0/shifter_left_sel[1]/shifter_left[1]/genblk1/genblk1/m2 File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v
-# ** Warning: (vsim-3015) C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/barrel_shifter.v(30): [PCDPC] - Port size (1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /barrel_shifter_tb/bs_0/shifter_left_sel[2]/shifter_left[0]/genblk1/genblk1/m2 File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v
-# ** Warning: (vsim-3015) C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/barrel_shifter.v(30): [PCDPC] - Port size (1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /barrel_shifter_tb/bs_0/shifter_left_sel[2]/shifter_left[1]/genblk1/genblk1/m2 File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v
-# ** Warning: (vsim-3015) C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/barrel_shifter.v(30): [PCDPC] - Port size (1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /barrel_shifter_tb/bs_0/shifter_left_sel[2]/shifter_left[2]/genblk1/genblk1/m2 File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v
-# ** Warning: (vsim-3015) C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/barrel_shifter.v(30): [PCDPC] - Port size (1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /barrel_shifter_tb/bs_0/shifter_left_sel[2]/shifter_left[3]/genblk1/genblk1/m2 File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v
-# ** Warning: (vsim-3015) C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/barrel_shifter.v(30): [PCDPC] - Port size (1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /barrel_shifter_tb/bs_0/shifter_left_sel[3]/shifter_left[0]/genblk1/genblk1/m2 File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v
-# ** Warning: (vsim-3015) C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/barrel_shifter.v(30): [PCDPC] - Port size (1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /barrel_shifter_tb/bs_0/shifter_left_sel[3]/shifter_left[1]/genblk1/genblk1/m2 File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v
-# ** Warning: (vsim-3015) C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/barrel_shifter.v(30): [PCDPC] - Port size (1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /barrel_shifter_tb/bs_0/shifter_left_sel[3]/shifter_left[2]/genblk1/genblk1/m2 File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v
-# ** Warning: (vsim-3015) C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/barrel_shifter.v(30): [PCDPC] - Port size (1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /barrel_shifter_tb/bs_0/shifter_left_sel[3]/shifter_left[3]/genblk1/genblk1/m2 File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v
-# ** Warning: (vsim-3015) C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/barrel_shifter.v(30): [PCDPC] - Port size (1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /barrel_shifter_tb/bs_0/shifter_left_sel[3]/shifter_left[4]/genblk1/genblk1/m2 File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v
-# ** Warning: (vsim-3015) C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/barrel_shifter.v(30): [PCDPC] - Port size (1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /barrel_shifter_tb/bs_0/shifter_left_sel[3]/shifter_left[5]/genblk1/genblk1/m2 File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v
-# ** Warning: (vsim-3015) C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/barrel_shifter.v(30): [PCDPC] - Port size (1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /barrel_shifter_tb/bs_0/shifter_left_sel[3]/shifter_left[6]/genblk1/genblk1/m2 File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v
-# ** Warning: (vsim-3015) C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/barrel_shifter.v(30): [PCDPC] - Port size (1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /barrel_shifter_tb/bs_0/shifter_left_sel[3]/shifter_left[7]/genblk1/genblk1/m2 File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v
-# ** Warning: (vsim-3015) C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/barrel_shifter.v(30): [PCDPC] - Port size (1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /barrel_shifter_tb/bs_0/shifter_left_sel[4]/shifter_left[0]/genblk1/genblk1/m2 File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v
-# ** Warning: (vsim-3015) C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/barrel_shifter.v(30): [PCDPC] - Port size (1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /barrel_shifter_tb/bs_0/shifter_left_sel[4]/shifter_left[1]/genblk1/genblk1/m2 File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v
-# ** Warning: (vsim-3015) C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/barrel_shifter.v(30): [PCDPC] - Port size (1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /barrel_shifter_tb/bs_0/shifter_left_sel[4]/shifter_left[2]/genblk1/genblk1/m2 File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v
-# ** Warning: (vsim-3015) C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/barrel_shifter.v(30): [PCDPC] - Port size (1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /barrel_shifter_tb/bs_0/shifter_left_sel[4]/shifter_left[3]/genblk1/genblk1/m2 File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v
-# ** Warning: (vsim-3015) C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/barrel_shifter.v(30): [PCDPC] - Port size (1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /barrel_shifter_tb/bs_0/shifter_left_sel[4]/shifter_left[4]/genblk1/genblk1/m2 File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v
-# ** Warning: (vsim-3015) C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/barrel_shifter.v(30): [PCDPC] - Port size (1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /barrel_shifter_tb/bs_0/shifter_left_sel[4]/shifter_left[5]/genblk1/genblk1/m2 File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v
-# ** Warning: (vsim-3015) C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/barrel_shifter.v(30): [PCDPC] - Port size (1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /barrel_shifter_tb/bs_0/shifter_left_sel[4]/shifter_left[6]/genblk1/genblk1/m2 File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v
-# ** Warning: (vsim-3015) C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/barrel_shifter.v(30): [PCDPC] - Port size (1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /barrel_shifter_tb/bs_0/shifter_left_sel[4]/shifter_left[7]/genblk1/genblk1/m2 File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v
-# ** Warning: (vsim-3015) C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/barrel_shifter.v(30): [PCDPC] - Port size (1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /barrel_shifter_tb/bs_0/shifter_left_sel[4]/shifter_left[8]/genblk1/genblk1/m2 File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v
-# ** Warning: (vsim-3015) C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/barrel_shifter.v(30): [PCDPC] - Port size (1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /barrel_shifter_tb/bs_0/shifter_left_sel[4]/shifter_left[9]/genblk1/genblk1/m2 File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v
-# ** Warning: (vsim-3015) C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/barrel_shifter.v(30): [PCDPC] - Port size (1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /barrel_shifter_tb/bs_0/shifter_left_sel[4]/shifter_left[10]/genblk1/genblk1/m2 File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v
-# ** Warning: (vsim-3015) C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/barrel_shifter.v(30): [PCDPC] - Port size (1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /barrel_shifter_tb/bs_0/shifter_left_sel[4]/shifter_left[11]/genblk1/genblk1/m2 File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v
-# ** Warning: (vsim-3015) C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/barrel_shifter.v(30): [PCDPC] - Port size (1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /barrel_shifter_tb/bs_0/shifter_left_sel[4]/shifter_left[12]/genblk1/genblk1/m2 File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v
-# ** Warning: (vsim-3015) C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/barrel_shifter.v(30): [PCDPC] - Port size (1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /barrel_shifter_tb/bs_0/shifter_left_sel[4]/shifter_left[13]/genblk1/genblk1/m2 File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v
-# ** Warning: (vsim-3015) C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/barrel_shifter.v(30): [PCDPC] - Port size (1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /barrel_shifter_tb/bs_0/shifter_left_sel[4]/shifter_left[14]/genblk1/genblk1/m2 File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v
-# ** Warning: (vsim-3015) C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/barrel_shifter.v(30): [PCDPC] - Port size (1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /barrel_shifter_tb/bs_0/shifter_left_sel[4]/shifter_left[15]/genblk1/genblk1/m2 File: C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project1-ALU/mux_2b.v
+# Loading instances from ALU_min_1200mv_0c_v_fast.sdo
+# Loading timing data from ALU_min_1200mv_0c_v_fast.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb File: C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/alu_tb.v
 # 
 # add wave *
 # view structure
@@ -118,40 +57,9 @@
 # .main_pane.objects.interior.cs.body.tree
 # run -all
 #                    0 << Starting the Simulation >>
-# **Test 1:
-#  input: 01110111111100011111010101001110, shiftamt: 20, left: 1
-# Expected: 01010100111000000000000000000000, actual: 01010100111000000000000000000000
-# 
-# **Test 2:
-#  input: 01110111111100011111010101001110, shiftamt: 31, left: 1
-# Expected: 00000000000000000000000000000000, actual: 00000000000000000000000000000000
-# 
-# **Test 3:
-#  input: 10001000000011100000101010110010, shiftamt: 20, left: 1
-# Expected: 10101011001000000000000000000000, actual: 10101011001000000000000000000000
-# 
-# **Test 4:
-#  input: 00000000000000000000000000000000, shiftamt: 20, left: 1
-# Expected: 00000000000000000000000000000000, actual: 00000000000000000000000000000000
-# 
-# **Test 5:
-#  input: 01110111111100011111010101001110, shiftamt: 20, left: 0
-# Expected: 00000000000000000000011101111111, actual: 00000000000000000000011101111111
-# 
-# **Test 6:
-#  input: 01110111111100011111010101001110, shiftamt: 31, left: 0
-# Expected: 00000000000000000000000000000000, actual: 00000000000000000000000000000000
-# 
-# **Test 7:
-#  input: 10001000000011100000101010110010, shiftamt: 20, left: 0
-# Expected: 11111111111111111111100010000000, actual: 11111111111111111111100010000000
-# 
-# **Test 8:
-#  input: 00000000000000000000000000000000, shiftamt: 20, left: 0
-# Expected: 00000000000000000000000000000000, actual: 00000000000000000000000000000000
-# 
 # The simulation completed without errors
-# Break key hit
-# Simulation stop requested.
-# End time: 18:46:49 on Sep 22,2021, Elapsed time: 0:01:07
-# Errors: 0, Warnings: 31
+# ** Note: $stop    : C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/alu_tb.v(51)
+#    Time: 3400 ns  Iteration: 1  Instance: /alu_tb
+# Break in Module alu_tb at C:/Users/22922/Desktop/FallSemester/ECE550/ECE550_Repo/Project1-ALU/alu_tb.v line 51
+# End time: 21:34:43 on Sep 23,2021, Elapsed time: 0:00:07
+# Errors: 0, Warnings: 0

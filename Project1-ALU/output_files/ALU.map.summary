@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Wed Sep 22 19:17:28 2021
+Analysis & Synthesis Status : Successful - Thu Sep 23 21:33:29 2021
 Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 Revision Name : ALU
-Top-level Entity Name : mux_8to1_32b
+Top-level Entity Name : alu
 Family : Cyclone IV E
-Total logic elements : 5
-    Total combinational functions : 5
+Total logic elements : 483
+    Total combinational functions : 483
     Dedicated logic registers : 0
 Total registers : 0
-Total pins : 291
+Total pins : 109
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
