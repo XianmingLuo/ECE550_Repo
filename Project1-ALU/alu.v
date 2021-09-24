@@ -48,18 +48,8 @@ module alu(data_operandA, data_operandB, ctrl_ALUopcode, ctrl_shiftamt, data_res
 								 sft_output,//10
 								 0,
 								 ctrl_ALUopcode[2:1]);
-	/*mux_8to1_32b selecter(data_result,
-								 sum_output,//000
-								 sum_output,//001
-								 and_output,//010
-								 or_output,//011
-								 sft_output,//100
-								 sft_output,//101
-								 0,//110
-								 0,//111
-								 ctrl_ALUopcode[2:0]);*/
-	//assign data_result = sum_output;
-	or bitOr(isNotEqual, sum_output);
+
+	assign isNotEqual = sum_output == 0?0:1;
 	
 	not not_gate2(notSign, sum_output[31]);
 	assign isLessThan = overflow == 0?sum_output[31]:notSign;
