@@ -21,8 +21,8 @@ So that we implemented a 1-bit 2:1 mux to select from sign and notSign according
 
 ## Source Structure
 ```
-.\
-├── alu.v\
+.
+├── alu.v
 │	├── barrel_shifter.v				#32-bit barrel_shifter
 │	│	├── mux_2to1_1b.v   			#1-bit 2:1 mux
 │	├── csa_32b_by_rca.v				#32-bit Carry Select Adder made by 16bit Ripple Carry Adder
@@ -34,7 +34,7 @@ So that we implemented a 1-bit 2:1 mux to select from sign and notSign according
 │	├── mux_8to1_32b.v				#32-bit 8:1 mux
 │		├── mux_4to1_32b.v 			#32-bit 4:1 mux
 │			├── mux_2to1_32b.v 		#32-bit 2:1 mux
-└── ...\
+└── ...
 ```
 
 
