@@ -1,8 +1,0 @@
-module mux_4to1_32b(out, in0, in1, in2, in3, select);
-	
-	input [31:0] in0, in1, in2, in3;
-	input [1:0] select;
-	output [31:0]out;
-	
-	
-endmodule

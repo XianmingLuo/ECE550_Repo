@@ -1,9 +1,0 @@
-module mux_2to1_32b(out, a, b, sel);
-
-	output [31:0] out;
-	input [31:0] a, b;
-	input sel;
-
-	assign out = sel==0?a:b;
-
-endmodule

@@ -7,13 +7,13 @@ We used 32-bit CSA as the adder. In order to switch between SUM and SUB instruct
 Also, we set carry-in of the adder to 1 when running SUB instruction. For the CSA, we built it with 3 16-bit RCAs. 
 As to the full adder, we used a 3-input OR gate. This reduces the gate delay of our full adder so that our adder is able to work with a 50MHz clock. 
 Our worst delay is about 15ns, which is less than 20ns, the period of the 50 MHz clock.
-### Bitwise And/Or
+### Bitwise AND/OR
 For the 32-bit bitwise and/or, we generate 32 and/or gates, each takes a single bit from A and B.
 ### Barrel Shifter
-For the barrel_shifter, we implement it with 1-bit 2:1 mux. We generalize the hardware implementation into two layers of GENERATE LOOPs. 
+For the barrel shifter, we implement it with 1-bit 2:1 mux. We generalize the hardware implementation into two layers of GENERATE LOOPs. 
 Also, for left and right shift, we use seperate shifter, with a 32-bit 2:1 mux to select result according to operation code.
 ### isNotEqual
-For the isNotEqual signal, we implement a or gate which takes all the bits of result of subtract operation as inputs.
+For the isNotEqual signal, we implement a OR gate which takes all the bits of result of subtract operation as inputs.
 ### isLessThan
 For the isLessThan signal, we can easily find that it is related to the sign bit of the result of subtract operation. 
 However, there is more we should consider about. When the ALU comes across overflow, the sign bit is just the opposite of the real sign. 
