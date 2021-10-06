@@ -1,0 +1,115 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project3-RegFile/simulation/modelsim
+vdecoder_5to32
+Z1 !s110 1633562849
+!i10b 1
+!s100 fJI?kocg43@HTbKM4?EhN3
+Ie0z5a44Qo7fG75`T@doFn1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1633547098
+8C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project3-RegFile/decoder_5to32.v
+FC:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project3-RegFile/decoder_5to32.v
+L0 1
+Z4 OV;L;10.4d;61
+r1
+!s85 0
+31
+Z5 !s108 1633562849.000000
+!s107 C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project3-RegFile/decoder_5to32.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project3-RegFile|C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project3-RegFile/decoder_5to32.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work {+incdir+C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project3-RegFile}
+vdffe_ref
+Z8 !s110 1633562850
+!i10b 1
+!s100 m2?1a8:`omUTO_3UK>MQz1
+ISQHgfi[[lJfTcC8h4b==00
+R2
+R0
+R3
+8C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project3-RegFile/dffe_ref.v
+FC:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project3-RegFile/dffe_ref.v
+L0 1
+R4
+r1
+!s85 0
+31
+Z9 !s108 1633562850.000000
+!s107 C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project3-RegFile/dffe_ref.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project3-RegFile|C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project3-RegFile/dffe_ref.v|
+!i113 1
+R6
+R7
+vregfile
+R1
+!i10b 1
+!s100 5Q<daD<93bVKTdR7[6lMd0
+I[`60ZMN?RnZeCP=kiP8^J1
+R2
+R0
+w1633560079
+8C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project3-RegFile/regfile.v
+FC:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project3-RegFile/regfile.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project3-RegFile/regfile.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project3-RegFile|C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project3-RegFile/regfile.v|
+!i113 1
+R6
+R7
+vregfile_tb
+R8
+!i10b 1
+!s100 Pi74:J`[ZKl3?BR4iA3F@0
+I7nQ@a_K>YgFFT?B<HoVZd2
+R2
+R0
+w1633562829
+8C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project3-RegFile/regfile_tb.v
+FC:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project3-RegFile/regfile_tb.v
+L0 3
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project3-RegFile/regfile_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project3-RegFile|C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project3-RegFile/regfile_tb.v|
+!i113 1
+R6
+R7
+vregister_32b
+R8
+!i10b 1
+!s100 bCj@FofRBFVE54WhNC8X[0
+IS@b_MDUMcW5K[ej1Gm_=i2
+R2
+R0
+R3
+8C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project3-RegFile/register_32b.v
+FC:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project3-RegFile/register_32b.v
+L0 1
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project3-RegFile/register_32b.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project3-RegFile|C:/Users/bz82/Documents/ECE 550/ECE550_Repo/Project3-RegFile/register_32b.v|
+!i113 1
+R6
+R7

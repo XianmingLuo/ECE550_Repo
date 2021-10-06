@@ -1,0 +1,73 @@
+|threebitadder
+a[0] => Add0.IN3
+a[1] => Add0.IN2
+a[2] => Add0.IN1
+b[0] => Add0.IN6
+b[1] => Add0.IN5
+b[2] => Add0.IN4
+cin => Add1.IN8
+HEX2[6] <= sevensegment:svsgmt2.port1
+HEX2[5] <= sevensegment:svsgmt2.port1
+HEX2[4] <= sevensegment:svsgmt2.port1
+HEX2[3] <= sevensegment:svsgmt2.port1
+HEX2[2] <= sevensegment:svsgmt2.port1
+HEX2[1] <= sevensegment:svsgmt2.port1
+HEX2[0] <= sevensegment:svsgmt2.port1
+HEX1[6] <= sevensegment:svsgmt1.port1
+HEX1[5] <= sevensegment:svsgmt1.port1
+HEX1[4] <= sevensegment:svsgmt1.port1
+HEX1[3] <= sevensegment:svsgmt1.port1
+HEX1[2] <= sevensegment:svsgmt1.port1
+HEX1[1] <= sevensegment:svsgmt1.port1
+HEX1[0] <= sevensegment:svsgmt1.port1
+HEX0[6] <= sevensegment:svsgmt0.port1
+HEX0[5] <= sevensegment:svsgmt0.port1
+HEX0[4] <= sevensegment:svsgmt0.port1
+HEX0[3] <= sevensegment:svsgmt0.port1
+HEX0[2] <= sevensegment:svsgmt0.port1
+HEX0[1] <= sevensegment:svsgmt0.port1
+HEX0[0] <= sevensegment:svsgmt0.port1
+
+
+|threebitadder|sevensegment:svsgmt0
+in2[0] => Decoder0.IN3
+in2[1] => Decoder0.IN2
+in2[2] => Decoder0.IN1
+in2[3] => Decoder0.IN0
+display[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+display[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+display[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+display[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|threebitadder|sevensegment:svsgmt1
+in2[0] => Decoder0.IN3
+in2[1] => Decoder0.IN2
+in2[2] => Decoder0.IN1
+in2[3] => Decoder0.IN0
+display[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+display[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+display[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+display[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|threebitadder|sevensegment:svsgmt2
+in2[0] => Decoder0.IN3
+in2[1] => Decoder0.IN2
+in2[2] => Decoder0.IN1
+in2[3] => Decoder0.IN0
+display[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+display[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+display[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+display[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
