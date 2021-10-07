@@ -3,7 +3,7 @@ module regfile (
     ctrl_writeEnable,
     ctrl_reset, ctrl_writeReg,
     ctrl_readRegA, ctrl_readRegB, data_writeReg,
-    data_readRegA, data_readRegB
+    data_readRegA, data_readRegB,
 );
 
    input clock, ctrl_writeEnable, ctrl_reset;
@@ -29,10 +29,16 @@ module regfile (
 	wire wr_en_wires; */
 	
 	
-	// generate 32 times
+	//for reg0, read only
+	wire [31:0] q0;
+	register_32b reg_0(q0, 32'h00000000, clock, 1'b0, ctrl_reset);
+	assign data_readRegA = dcd_outwires_read_A[0]? q0 : 32'bz;
+	assign data_readRegB = dcd_outwires_read_B[0]? q0 : 32'bz;
+	
+	// generate 31 times except reg0
 	genvar i;
 	generate
-		for(i = 0; i < 32; i = i+1) begin: name
+		for(i = 1; i < 32; i = i+1) begin: name
 			// 32 set of wires using generate loop
 			wire [31:0] q; 
 			wire wr_en_wire;
@@ -42,18 +48,17 @@ module regfile (
 			
 			// 2. anything connects to the 32 registers 
 			//    ---- module register_32b( [31:0]q, [31:0]d, clk, en, clr);
-			register_32b reg_0(q, data_writeReg, clock, wr_en_wire, ctrl_reset); //clr = ctrl_reset??
+			register_32b reg_1(q, data_writeReg, clock, wr_en_wire, ctrl_reset); //clr = ctrl_reset??
 			
 			// 3. Reading A port: connection between register and output 
 			//    (---- e.g. bufif1  b1(out, in, oe);)
-			assign data_readRegA = dcd_outwires_read_A[i]? q : 1'bz;
+			assign data_readRegA = dcd_outwires_read_A[i]? q : 32'bz;
 				
 			// 4. Reading B port: connection between register and output  
-			assign data_readRegB = dcd_outwires_read_B[i]? q : 1'bz;
-			
+			assign data_readRegB = dcd_outwires_read_B[i]? q : 32'bz;
 		end
 	endgenerate
-	
+
 	
 	
 endmodule

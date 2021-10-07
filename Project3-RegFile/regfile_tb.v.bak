@@ -8,14 +8,15 @@ module regfile_tb();
 
     // outputs from the DUT are wire type
     wire [31:0] data_readRegA, data_readRegB;
-
+	 wire [32*32-1:0] q;
     // Tracking the number of errors
     integer errors;
     integer index;    // for testing...
 
     // instantiate the DUT
     regfile regfile_ut (clock, ctrl_writeEn, ctrl_reset, ctrl_writeReg,
-        ctrl_readRegA, ctrl_readRegB, data_writeReg, data_readRegA, data_readRegB);
+        ctrl_readRegA, ctrl_readRegB, data_writeReg, data_readRegA, data_readRegB,
+		  q);
 
     // setting the initial values of all the reg
     initial
@@ -33,8 +34,8 @@ module regfile_tb();
 
         // Begin testing... (loop over registers)
         for(index = 0; index <= 31; index = index + 1) begin
-            writeRegister(index, 32'h0000DEAD);
-            checkRegister(index, 32'h0000DEAD);
+            writeRegister(index, 32'h00364908);
+            checkRegister(index, 32'h00364908);
         end
 
         if (errors == 0) begin

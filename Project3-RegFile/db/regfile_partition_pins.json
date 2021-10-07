@@ -284,15 +284,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "ctrl_readRegB[2]",
+					"strict" : false
+				},
+				{
 					"name" : "ctrl_readRegB[0]",
 					"strict" : false
 				},
 				{
 					"name" : "ctrl_readRegB[1]",
-					"strict" : false
-				},
-				{
-					"name" : "ctrl_readRegB[2]",
 					"strict" : false
 				},
 				{
@@ -324,15 +324,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "ctrl_writeReg[4]",
+					"strict" : false
+				},
+				{
 					"name" : "ctrl_writeReg[2]",
 					"strict" : false
 				},
 				{
 					"name" : "ctrl_writeReg[3]",
-					"strict" : false
-				},
-				{
-					"name" : "ctrl_writeReg[4]",
 					"strict" : false
 				},
 				{

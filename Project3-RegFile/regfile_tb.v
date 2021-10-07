@@ -8,7 +8,6 @@ module regfile_tb();
 
     // outputs from the DUT are wire type
     wire [31:0] data_readRegA, data_readRegB;
-
     // Tracking the number of errors
     integer errors;
     integer index;    // for testing...
