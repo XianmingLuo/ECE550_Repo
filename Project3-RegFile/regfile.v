@@ -23,12 +23,6 @@ module regfile (
 	decoder_5to32 dcd_readB(dcd_outwires_read_B, ctrl_readRegB, 1'b1); // for reading B
 	
 	
-	/* !!! 
-	// how to make 32 of these wires??? ---- I put them into the generate loop, is it right?
-	wire [31:0] q; 
-	wire wr_en_wires; */
-	
-	
 	//for reg0, read only
 	wire [31:0] q0;
 	register_32b reg_0(q0, 32'h00000000, clock, 1'b0, ctrl_reset);
