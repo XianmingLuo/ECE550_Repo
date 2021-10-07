@@ -1,0 +1,9 @@
+*_tb.v
+*.bak
+*.vwf
+*.rpt
+*.pdf
+db/
+incremental_db/
+output_files/
+simulation/
