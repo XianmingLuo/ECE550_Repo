@@ -114,7 +114,7 @@ module processor(
 	 // output to Imem  - fetch insn
 	 wire [11:0] q, d;
 	 
-	 assign d = q + 12'd4;
+	 assign d = q + 12'd1;
 	 pc_12b pc_1(q, d, clock, 1'b1, reset); //?
 	 assign address_imem = q;
 	 
@@ -124,10 +124,16 @@ module processor(
 	 assign wren = ctrl_sig[3]; // DMwe = ctrl[3]
 	 
 	 //output to RegFile
+	 wire [31:0] data_result_ovfl, w1, w2;
+
 	 assign ctrl_writeEnable = ctrl_sig[7]; // Rwe = ctrl[7]
 	 assign ctrl_writeReg = overflow? 5'd30 : q_imem[26:22] ; // 0-$rd (vs 1-$r30), ctrl = overflow
 	 assign ctrl_readRegA = q_imem[21:17]; // $rs
 	 assign ctrl_readRegB = ctrl_sig[6]? q_imem[26:22] : q_imem[16:12]; // 0-$rt (vs 1-$rd), Rscr2 = ctrl[6]
-	 assign data_writeReg = ctrl_sig[2]? q_dmem : data_result; // Rwd = ctrl[2]
+	 
+	 assign w2 = q_imem[2]? 32'd3 : 32'd1; // AlUop = 00001 (=3) vs 00000 (=1)
+	 assign w1 = q_imem[27]? 32'd2 : w2; // opcode = 00101 (=2) vs 00000 (=1/3)
+	 assign data_result_ovfl = overflow? w1 : data_result;
+	 assign data_writeReg = ctrl_sig[2]? q_dmem : data_result_ovfl; // Rwd = ctrl[2]
 
 endmodule
