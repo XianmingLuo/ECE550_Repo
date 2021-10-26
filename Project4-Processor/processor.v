@@ -94,17 +94,20 @@ module processor(
     /* --------------------------- YOUR CODE STARTS HERE --------------------------------*/
 	 
 	 // decode q_imem 
-	 reg [7:0] ctrl_sig, immed_sx;
+	 wire [7:0] ctrl_sig; 
+	 wire [31:0] immed_sx;
 	 
 	 ctrl_sig_decoder decoder_1(ctrl_sig, q_imem[31:27]); // opcode
 	 sign_extender sx(immed_sx, q_imem[16:0]); // immediate
 	 
 	 
 	 // ALU section
-	 wire data_operandB, func, data_result, isNotEqual, isLessThan, overflow;
+	 wire [31:0] data_operandB, data_result;
+	 wire [4:0] func;
+	 wire isNotEqual, isLessThan, overflow;
 	 
-	 assign func = ctrl_sig[4]? q_imem[6:2] : 5'b0; // ALUop, ctrl[4] = ALUop
-	 assign data_operandB = ctrl_sig[5]? data_readRegB : immed_sx; // ctrl[5] = ALUinB
+	 assign func = ctrl_sig[4]? 5'b0 : q_imem[6:2]; // ALUop = ctrl[4] 
+	 assign data_operandB = ctrl_sig[5]? immed_sx : data_readRegB; // ALUinB = ctrl[5]
 	 alu alu_1(data_readRegA, data_operandB, func, q_imem[11:7], data_result, isNotEqual, isLessThan, overflow); // shamt
 	 
 	 
@@ -113,17 +116,18 @@ module processor(
 	 
 	 assign d = q + 12'd4;
 	 pc_12b(q, d, clock, 1'b1, reset); //?
+	 assign address_imem = q;
 	 
 	 // Output to Dmem
 	 assign address_dmem = data_result[11:0];
 	 assign data = data_readRegB;
-	 assign wren = ctrl_sig[3]; // ctrl[3] = DMwe
+	 assign wren = ctrl_sig[3]; // DMwe = ctrl[3]
 	 
 	 //output to RegFile
-	 assign ctrl_writeEnable = ctrl_sig[7]; // ctrl[7] = Rwe
-	 assign ctrl_writeReg = overflow? q_imem[26:22] : 5'd30; // $rd, ctrl = overflow
+	 assign ctrl_writeEnable = ctrl_sig[7]; // Rwe = ctrl[7]
+	 assign ctrl_writeReg = overflow? 5'd30 : q_imem[26:22] ; // 0-$rd (vs 1-$r30), ctrl = overflow
 	 assign ctrl_readRegA = q_imem[21:17]; // $rs
-	 assign ctrl_readRegB = ctrl_sig[6]? q_imem[16:12] : q_imem[26:22]; // $rt, ctrl[6] = Rscr2
-	 assign data_writeReg = ctrl_sig[2]? q_dmem : data_result; // ctrl[2] = Rwd
+	 assign ctrl_readRegB = ctrl_sig[6]? q_imem[26:22] : q_imem[16:12]; // 0-$rt (vs 1-$rd), Rscr2 = ctrl[6]
+	 assign data_writeReg = ctrl_sig[2]? q_dmem : data_result; // Rwd = ctrl[2]
 
 endmodule
