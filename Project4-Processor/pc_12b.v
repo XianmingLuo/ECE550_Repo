@@ -1,7 +1,7 @@
-module register_32b(q, d, clk, en, clr);
+module pc_12b(q, d, clk, en, clr);
    
    //Inputs
-	input [31:0] d;
+	input [11:0] d;
 	
    input clk, en, clr;
    
@@ -9,12 +9,12 @@ module register_32b(q, d, clk, en, clr);
    wire clr;
 
    //Output
-   output [31:0] q;	
+   output [11:0] q;	
 	
 	genvar i;
 	
 	generate
-		for(i = 0; i < 32; i = i+1) begin: register_32b
+		for(i = 0; i < 12; i = i+1) begin: register_12b
 			dffe_ref dffe(q[i], d[i], clk, en, clr);
 		end
 	endgenerate
