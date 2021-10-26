@@ -90,6 +90,40 @@ module processor(
     output [31:0] data_writeReg;
     input [31:0] data_readRegA, data_readRegB;
 
-    /* YOUR CODE STARTS HERE */
+	 
+    /* --------------------------- YOUR CODE STARTS HERE --------------------------------*/
+	 
+	 // decode q_imem 
+	 reg [7:0] ctrl_sig, immed_sx;
+	 
+	 ctrl_sig_decoder decoder_1(ctrl_sig, q_imem[31:27]); // opcode
+	 sign_extender sx(immed_sx, q_imem[16:0]); // immediate
+	 
+	 
+	 // ALU section
+	 wire data_operandB, func, data_result, isNotEqual, isLessThan, overflow;
+	 
+	 assign func = ctrl_sig[4]? q_imem[6:2] : 5'b0; // ALUop, ctrl[4] = ALUop
+	 assign data_operandB = ctrl_sig[5]? data_readRegB : immed_sx; // ctrl[5] = ALUinB
+	 alu alu_1(data_readRegA, data_operandB, func, q_imem[11:7], data_result, isNotEqual, isLessThan, overflow); // shamt
+	 
+	 
+	 // output to Imem  - fetch insn
+	 wire [11:0] q, d;
+	 
+	 assign d = q + 12'd4;
+	 pc_12b(q, d, clock, 1'b1, reset); //?
+	 
+	 // Output to Dmem
+	 assign address_dmem = data_result[11:0];
+	 assign data = data_readRegB;
+	 assign wren = ctrl_sig[3]; // ctrl[3] = DMwe
+	 
+	 //output to RegFile
+	 assign ctrl_writeEnable = ctrl_sig[7]; // ctrl[7] = Rwe
+	 assign ctrl_writeReg = overflow? q_imem[26:22] : 5'd30; // $rd, ctrl = overflow
+	 assign ctrl_readRegA = q_imem[21:17]; // $rs
+	 assign ctrl_readRegB = ctrl_sig[6]? q_imem[16:12] : q_imem[26:22]; // $rt, ctrl[6] = Rscr2
+	 assign data_writeReg = ctrl_sig[2]? q_dmem : data_result; // ctrl[2] = Rwd
 
 endmodule
