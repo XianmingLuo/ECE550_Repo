@@ -115,7 +115,7 @@ module processor(
 	 wire [11:0] q, d;
 	 
 	 assign d = q + 12'd4;
-	 pc_12b(q, d, clock, 1'b1, reset); //?
+	 pc_12b pc_1(q, d, clock, 1'b1, reset); //?
 	 assign address_imem = q;
 	 
 	 // Output to Dmem
