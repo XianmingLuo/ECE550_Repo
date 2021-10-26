@@ -1,0 +1,11 @@
+*_tb.v
+*.bak
+*.vwf
+*.rpt
+*.pdf
+*.gitignore
+db/
+incremental_db/
+output_files/
+simulation/
+*base-master/
