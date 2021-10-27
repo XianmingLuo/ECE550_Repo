@@ -9,12 +9,7 @@
  * inspect which signals the processor tries to assert when.
  */
 
-module skeleton(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_clock, q_imem, address_imem, 
-		ctrl_writeEnable, data_writeReg, ctrl_writeReg,
-		address_dmem,                   // O: The address of the data to get or put from/to dmem
-        data,                           // O: The data to write to dmem
-        wren,                           // O: Write enable for dmem
-        q_dmem);
+module skeleton(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_clock);
     input clock, reset;
     /* 
         Create four clocks for each module from the original input "clock".
@@ -24,14 +19,9 @@ module skeleton(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_c
         based on proper functioning with this clock.
     */
     output imem_clock, dmem_clock, processor_clock, regfile_clock;
-	 
-	 //for debug
-	 output q_imem, address_imem;//for IMEM
-	 output ctrl_writeEnable, data_writeReg, ctrl_writeReg;//for RegFile
-	 output address_dmem, data, wren, q_dmem;//for DMEM
-	 //
+	
+	clk_allocate my_clk(imem_clock, dmem_clock, processor_clock, regfile_clock, clock);
 
-	 clk_allocate my_clk(imem_clock, dmem_clock, processor_clock, regfile_clock, clock);
     /** IMEM **/
     // Figure out how to generate a Quartus syncram component and commit the generated verilog file.
     // Make sure you configure it correctly!
