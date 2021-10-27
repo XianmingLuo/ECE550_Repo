@@ -1,20 +1,17 @@
-# ECE550_RegFile
+# ECE550_Processor
 ## Author: 
 Mila Zhao(bz82) and Xianming Luo(xl369)
-## Design Implementation: 
-### Decoder
-We made the 5 to 32 decoder using 32 5-input AND gates.
-### 32-bit Single Register
-We connect 32 D Flip-flops together, each represents one bit. Since their clock and reset is connected, they can be triggered and asynchronously cleared at the same time.
-## Estimated Delay
-Tested under the "Slow -7 1.5V 85 Model", the worst delay is about 17 ns, able to work under 50MHz clock.
+## Clock Assignment
+We wrap the clock assignment into the clk_allocate.v. For processor, imem, and regfile, we use the same clock(25MHz), which is half the frequency of input clock. For dmem, we simply use the input clock, which is 50MHz.
+The reason we assign clocks as this is because we need another rising edge for reading dmem, so that the frequency of dmem clock should be the double of other clocks.
 ## Source Structure
 ```
 .
-├── regfile.v						#32-bit regfile
-│	├── decoder_5to32.v				#5to32 decoder
-│	└── register_32b.v				#32-bit single register made by 1-bit D Flip-flop with enable
-│		└── dffe_ref.v 				#1-bit D Flip-flop with enable
+├── skeleton.v				#skeleton for processor
+│	├── processor.v			#processor file
+│	├── imem.v				#32-bit, 12-bit address instruction memory
+│	├── dmem.v				#32-bit, 12-bit address data memory
+│	└── regfile.v			#32-bit register file
 └── ...
 ```
 
