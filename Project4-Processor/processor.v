@@ -127,6 +127,7 @@ module processor(
 	 wire [31:0] data_result_ovfl, w1, w2;
 
 	 assign ctrl_writeEnable = ctrl_sig[7]; // Rwe = ctrl[7]
+	 
 	 assign ctrl_writeReg = overflow? 5'd30 : q_imem[26:22] ; // 0-$rd (vs 1-$r30), ctrl = overflow
 	 assign ctrl_readRegA = q_imem[21:17]; // $rs
 	 assign ctrl_readRegB = ctrl_sig[6]? q_imem[26:22] : q_imem[16:12]; // 0-$rt (vs 1-$rd), Rscr2 = ctrl[6]

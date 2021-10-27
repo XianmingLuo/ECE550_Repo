@@ -9,7 +9,12 @@
  * inspect which signals the processor tries to assert when.
  */
 
-module skeleton(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_clock);
+module skeleton(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_clock, q_imem, address_imem, 
+		ctrl_writeEnable, data_writeReg, ctrl_writeReg,
+		address_dmem,                   // O: The address of the data to get or put from/to dmem
+        data,                           // O: The data to write to dmem
+        wren,                           // O: Write enable for dmem
+        q_dmem);
     input clock, reset;
     /* 
         Create four clocks for each module from the original input "clock".
@@ -19,10 +24,14 @@ module skeleton(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_c
         based on proper functioning with this clock.
     */
     output imem_clock, dmem_clock, processor_clock, regfile_clock;
-	 assign imem_clock = clock;
-	 assign dmem_clock = clock;
-	 assign processor_clock = clock;
-	 assign regfile_clock = clock;
+	 
+	 //for debug
+	 output q_imem, address_imem;//for IMEM
+	 output ctrl_writeEnable, data_writeReg, ctrl_writeReg;//for RegFile
+	 output address_dmem, data, wren, q_dmem;//for DMEM
+	 //
+
+	 clk_allocate my_clk(imem_clock, dmem_clock, processor_clock, regfile_clock, clock);
     /** IMEM **/
     // Figure out how to generate a Quartus syncram component and commit the generated verilog file.
     // Make sure you configure it correctly!
@@ -42,11 +51,11 @@ module skeleton(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_c
     wire wren;
     wire [31:0] q_dmem;
     dmem my_dmem(
-        .address    (/* 12-bit wire */),       // address of data
+        .address    (address_dmem),       // address of data
         .clock      (dmem_clock),                  // may need to invert the clock
-        .data	    (/* 32-bit data in */),    // data you want to write
-        .wren	    (/* 1-bit signal */),      // write enable
-        .q          (/* 32-bit data out */)    // data from dmem
+        .data	    (data),    // data you want to write
+        .wren	    (wren),      // write enable
+        .q          (q_dmem)    // data from dmem
     );
 
     /** REGFILE **/
