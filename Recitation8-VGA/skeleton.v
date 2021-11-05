@@ -91,7 +91,11 @@ module skeleton(resetn,
 								 .oVS(VGA_VS),
 								 .b_data(VGA_B),
 								 .g_data(VGA_G),
-								 .r_data(VGA_R));
+								 .r_data(VGA_R),
+								 .moveUp(moveUp),
+								 .moveDown(moveDown),
+								 .moveLeft(moveLeft),
+								 .moveRight(moveRight));
 	
 	
 endmodule
