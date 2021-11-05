@@ -1,5 +1,9 @@
 module vga_controller(iRST_n,
                       iVGA_CLK,
+							 moveUp,
+							 moveDown,
+							 moveLeft,
+							 moveRight,
                       oBLANK_n,
                       oHS,
                       oVS,
@@ -10,6 +14,7 @@ module vga_controller(iRST_n,
 	
 input iRST_n;
 input iVGA_CLK;
+input moveUp, moveDown, moveLeft, moveRight;
 output reg oBLANK_n;
 output reg oHS;
 output reg oVS;
@@ -19,6 +24,11 @@ output [7:0] r_data;
 ///////// ////                     
 reg [18:0] ADDR;
 reg [23:0] bgr_data;
+
+//Current Location
+reg [9:0] coord_curX;
+reg [8:0] coord_curY;
+//////////////
 wire VGA_CLK_n;
 wire [7:0] index;
 wire [23:0] bgr_data_raw;
@@ -44,6 +54,7 @@ end
 //////////////////////////
 //////INDEX addr.
 assign VGA_CLK_n = ~iVGA_CLK;
+
 img_data	img_data_inst (
 	.address ( ADDR ),
 	.clock ( VGA_CLK_n ),
@@ -52,9 +63,11 @@ img_data	img_data_inst (
 	
 /////////////////////////
 //////Add switch-input logic here
+
 	
 //////Color table output
 //fetch data according to index
+//module img_index(address, clock, q)
 img_index	img_index_inst (
 	.address ( index ),
 	.clock ( iVGA_CLK ),

@@ -11,7 +11,11 @@ module skeleton(resetn,
 	VGA_R,   														//	VGA Red[9:0]
 	VGA_G,	 														//	VGA Green[9:0]
 	VGA_B,															//	VGA Blue[9:0]
-	CLOCK_50);  													// 50 MHz clock
+	CLOCK_50,
+	moveUp,
+	moveDown,
+	moveLeft,
+	moveRight);  													// 50 MHz clock
 		
 	////////////////////////	VGA	////////////////////////////
 	output			VGA_CLK;   				//	VGA Clock
@@ -23,7 +27,7 @@ module skeleton(resetn,
 	output	[7:0]	VGA_G;	 				//	VGA Green[9:0]
 	output	[7:0]	VGA_B;   				//	VGA Blue[9:0]
 	input				CLOCK_50;
-
+	input 			moveUp, moveDown, moveLeft, moveRight;
 	////////////////////////	PS2	////////////////////////////
 	input 			resetn;
 	inout 			ps2_data, ps2_clock;
