@@ -9,19 +9,23 @@
  * inspect which signals the processor tries to assert when.
  */
 
-module skeleton(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_clock,
+module skeleton(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_clock
+/*
+,
 address_imem, q_imem,//imem
 data, q_dmem, //dmem
 ctrl_writeReg, ctrl_readRegA, ctrl_readRegB,//regfile
 data_writeReg, data_readRegA, data_readRegB//regfile
+*/
 );
 //for debug purpose
+/*
 	output [11:0] address_imem;
 	output [31:0] q_imem;//imem
 	output [31:0] data, q_dmem; //dmem
 	output [4:0] ctrl_writeReg, ctrl_readRegA, ctrl_readRegB;//regfile
 	output [31:0] data_writeReg, data_readRegA, data_readRegB;//regfile
-
+*/
     input clock, reset;
     /* 
         Create four clocks for each module from the original input "clock".

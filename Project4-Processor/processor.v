@@ -94,7 +94,7 @@ module processor(
     /* --------------------------- YOUR CODE STARTS HERE --------------------------------*/
 	 
 	 // decode q_imem 
-	 wire [11:0] ctrl_sig; 
+	 wire [12:0] ctrl_sig; 
 	 wire [31:0] immed_sx;
 	 
 	 ctrl_sig_decoder decoder_1(ctrl_sig, q_imem[31:27]); // opcode
@@ -115,7 +115,7 @@ module processor(
 	 wire [11:0] addr_cur, addr_next, addr_br, addr_jp;
 	 assign addr_br = (ctrl_sig[1]&&isNotEqual)||(ctrl_sig[10]&&(!isLessThan)&&isNotEqual)?addr_cur + q_imem[16:0] + 12'd1:addr_cur + 12'd1;// BRlt = ctrl[10], BRne = ctrl[1]
 	 assign addr_jp = ctrl_sig[11]?data_readRegB:q_imem[26:0];// JPr = ctrl[11]
-	 assign addr_next = ctrl_sig[0]?addr_jp:addr_br;// JP = ctrl[0]
+	 assign addr_next = (ctrl_sig[0]&&(isNotEqual||(!ctrl_sig[12])))?addr_jp:addr_br;// JP = ctrl[0]
 	 pc_12b pc_1(addr_cur, addr_next, clock, 1'b1, reset); //?
 	 assign address_imem = addr_cur;
 	 
@@ -126,18 +126,27 @@ module processor(
 	 
 	 //output to RegFile
 	 wire [31:0] data_result_ovfl, w1, w2;
-	 wire [31:0] data_result_wo_jal;
-	 wire [4:0] ctrl_writeReg_wo_jal;
+	 wire [31:0] data_result_wo_jal, data_result_wo_setx;
+	 wire [4:0] ctrl_readRegA_wo_bex, ctrl_readRegB_wo_bex;
+	 wire [4:0] ctrl_writeReg_wo_jal, ctrl_writeReg_wo_setx;
 	 assign ctrl_writeEnable = ctrl_sig[7]; // Rwe = ctrl[7]
 	 
+	 //ctrl_writeReg
 	 assign ctrl_writeReg_wo_jal = overflow? 5'd30 : q_imem[26:22] ; // 0-$rd (vs 1-$r30), ctrl = overflow
-	 assign ctrl_writeReg = ctrl_sig[8]?5'd31:ctrl_writeReg_wo_jal;
-	 assign ctrl_readRegA = q_imem[21:17]; // $rs
-	 assign ctrl_readRegB = ctrl_sig[6]? q_imem[26:22] : q_imem[16:12]; // 0-$rt (vs 1-$rd), Rsrc2 = ctrl[6]
+	 assign ctrl_writeReg_wo_setx = ctrl_sig[8]?5'd31:ctrl_writeReg_wo_jal;//Rwd2 = ctrl[8]
+	 assign ctrl_writeReg = ctrl_sig[12]?5'd30:ctrl_writeReg_wo_setx;
 	 
+	 //ctrl_readReg
+	 assign ctrl_readRegA_wo_bex = q_imem[21:17]; // $rs
+	 assign ctrl_readRegA = ctrl_sig[12]? 5'd30:ctrl_readRegA_wo_bex; //Rst = ctrl[12]
+	 assign ctrl_readRegB_wo_bex = ctrl_sig[6]? q_imem[26:22] : q_imem[16:12]; // 0-$rt (vs 1-$rd), Rsrc2 = ctrl[6]
+	 assign ctrl_readRegB = ctrl_sig[12]? 5'b0:ctrl_readRegB_wo_bex;//Rst = ctrl[12]
+	 
+	 //data_writeReg
 	 assign w2 = q_imem[2]? 32'd3 : 32'd1; // AlUop = 00001 (=3) vs 00000 (=1)
 	 assign w1 = q_imem[27]? 32'd2 : w2; // opcode = 00101 (=2) vs 00000 (=1/3)
 	 assign data_result_ovfl = overflow? w1 : data_result;
 	 assign data_result_wo_jal = ctrl_sig[2]? q_dmem : data_result_ovfl; // Rwd = ctrl[2]
-	 assign data_writeReg = ctrl_sig[8]? addr_cur + 12'd1:data_result_wo_jal; //Rwd2 = ctrl[8]
+	 assign data_result_wo_setx = ctrl_sig[8]? addr_cur + 12'd1:data_result_wo_jal; //Rwd2 = ctrl[8]
+	 assign data_writeReg = ctrl_sig[12]? q_imem[26:0]:data_result_wo_setx;
 endmodule
