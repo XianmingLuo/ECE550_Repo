@@ -94,7 +94,7 @@ module processor(
     /* --------------------------- YOUR CODE STARTS HERE --------------------------------*/
 	 
 	 // decode q_imem 
-	 wire [10:0] ctrl_sig; 
+	 wire [11:0] ctrl_sig; 
 	 wire [31:0] immed_sx;
 	 
 	 ctrl_sig_decoder decoder_1(ctrl_sig, q_imem[31:27]); // opcode
@@ -112,9 +112,10 @@ module processor(
 	 
 	 
 	 // output to Imem  - fetch insn
-	 wire [11:0] addr_cur, addr_next, addr_br;
-	 assign addr_br = (ctrl_sig[1]&&isNotEqual)||(ctrl_sig[10]&&isLessThan)?addr_cur + q_imem[16:0] + 12'd1:addr_cur + 12'd1;// BRlt = ctrl[10], BRne = ctrl[1]
-	 assign addr_next = ctrl_sig[0]?q_imem[11:0]:addr_br;// JP = ctrl[0]
+	 wire [11:0] addr_cur, addr_next, addr_br, addr_jp;
+	 assign addr_br = (ctrl_sig[1]&&isNotEqual)||(ctrl_sig[10]&&(!isLessThan)&&isNotEqual)?addr_cur + q_imem[16:0] + 12'd1:addr_cur + 12'd1;// BRlt = ctrl[10], BRne = ctrl[1]
+	 assign addr_jp = ctrl_sig[11]?data_readRegB:q_imem[26:0];// JPr = ctrl[11]
+	 assign addr_next = ctrl_sig[0]?addr_jp:addr_br;// JP = ctrl[0]
 	 pc_12b pc_1(addr_cur, addr_next, clock, 1'b1, reset); //?
 	 assign address_imem = addr_cur;
 	 
