@@ -19,6 +19,7 @@ module alu(data_operandA, data_operandB, ctrl_ALUopcode, ctrl_shiftamt, data_res
 	wire cin;
 	wire left;
 	wire notSign;
+	wire sum_overflow;
 	genvar i;
 	generate
 		for (i = 0; i< 32; i = i + 1) begin : inverter
@@ -28,7 +29,7 @@ module alu(data_operandA, data_operandB, ctrl_ALUopcode, ctrl_shiftamt, data_res
 	assign finalB = ctrl_ALUopcode[0] == 0 ? data_operandB : notB;
 	assign cin = ctrl_ALUopcode[0] == 0?0: 1;
 	//module csa_32b_by_rca(sum, c_out, ovf, a, b, c_in);
-	csa_32b_by_rca adder(sum_output, c_out, overflow, data_operandA, finalB, cin);
+	csa_32b_by_rca adder(sum_output, c_out, sum_overflow, data_operandA, finalB, cin);
 	
 	//module bitwise_and_32b(out, in1, in2);
 	bitwise_and_32b and32b(and_output, data_operandA, data_operandB);
@@ -52,5 +53,6 @@ module alu(data_operandA, data_operandB, ctrl_ALUopcode, ctrl_shiftamt, data_res
 	assign isNotEqual = sum_output==0?0:1;
 	
 	not not_gate2(notSign, sum_output[31]);
-	assign isLessThan = overflow==0?sum_output[31]:notSign;
+	assign isLessThan = sum_overflow==0?sum_output[31]:notSign;
+	assign overflow = ctrl_ALUopcode[4:1]==0?sum_overflow:0;
 endmodule
