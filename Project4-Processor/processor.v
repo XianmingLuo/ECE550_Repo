@@ -94,7 +94,7 @@ module processor(
     /* --------------------------- YOUR CODE STARTS HERE --------------------------------*/
 	 
 	 // decode q_imem 
-	 wire [8:0] ctrl_sig; 
+	 wire [10:0] ctrl_sig; 
 	 wire [31:0] immed_sx;
 	 
 	 ctrl_sig_decoder decoder_1(ctrl_sig, q_imem[31:27]); // opcode
@@ -106,17 +106,17 @@ module processor(
 	 wire [4:0] func;
 	 wire isNotEqual, isLessThan, overflow;
 	 
-	 assign func = ctrl_sig[4]? 5'b0 : q_imem[6:2]; // ALUop = ctrl[4] 
+	 assign func = ctrl_sig[9]? q_imem[6:2]:ctrl_sig[4]; // ALUfunc = ctrl[9], ALUop = ctrl[4] 
 	 assign data_operandB = ctrl_sig[5]? immed_sx : data_readRegB; // ALUinB = ctrl[5]
 	 alu alu_1(data_readRegA, data_operandB, func, q_imem[11:7], data_result, isNotEqual, isLessThan, overflow); // shamt
 	 
 	 
 	 // output to Imem  - fetch insn
-	 wire [11:0] q, d;
-	 
-	 assign d = ctrl_sig[0]?q_imem[11:0]:q + 12'd1;
-	 pc_12b pc_1(q, d, clock, 1'b1, reset); //?
-	 assign address_imem = q;
+	 wire [11:0] addr_cur, addr_next, addr_br;
+	 assign addr_br = (ctrl_sig[1]&&isNotEqual)||(ctrl_sig[10]&&isLessThan)?addr_cur + q_imem[16:0] + 12'd1:addr_cur + 12'd1;// BRlt = ctrl[10], BRne = ctrl[1]
+	 assign addr_next = ctrl_sig[0]?q_imem[11:0]:addr_br;// JP = ctrl[0]
+	 pc_12b pc_1(addr_cur, addr_next, clock, 1'b1, reset); //?
+	 assign address_imem = addr_cur;
 	 
 	 // Output to Dmem
 	 assign address_dmem = data_result[11:0];
@@ -132,11 +132,11 @@ module processor(
 	 assign ctrl_writeReg_wo_jal = overflow? 5'd30 : q_imem[26:22] ; // 0-$rd (vs 1-$r30), ctrl = overflow
 	 assign ctrl_writeReg = ctrl_sig[8]?5'd31:ctrl_writeReg_wo_jal;
 	 assign ctrl_readRegA = q_imem[21:17]; // $rs
-	 assign ctrl_readRegB = ctrl_sig[6]? q_imem[26:22] : q_imem[16:12]; // 0-$rt (vs 1-$rd), Rscr2 = ctrl[6]
+	 assign ctrl_readRegB = ctrl_sig[6]? q_imem[26:22] : q_imem[16:12]; // 0-$rt (vs 1-$rd), Rsrc2 = ctrl[6]
 	 
 	 assign w2 = q_imem[2]? 32'd3 : 32'd1; // AlUop = 00001 (=3) vs 00000 (=1)
 	 assign w1 = q_imem[27]? 32'd2 : w2; // opcode = 00101 (=2) vs 00000 (=1/3)
 	 assign data_result_ovfl = overflow? w1 : data_result;
 	 assign data_result_wo_jal = ctrl_sig[2]? q_dmem : data_result_ovfl; // Rwd = ctrl[2]
-	 assign data_writeReg = ctrl_sig[8]? q + 12'd1:data_result_wo_jal;
+	 assign data_writeReg = ctrl_sig[8]? addr_cur + 12'd1:data_result_wo_jal; //Rwd2 = ctrl[8]
 endmodule
