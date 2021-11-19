@@ -14,5 +14,9 @@ The reason we assign clocks as this is because we need another rising edge for r
 │	└── regfile.v			#32-bit register file
 └── ...
 ```
+## Test Approach
+We use waveform timing simulation to test. Our processor can work properly under 50MHz main clock.
+And the waveform is as below.
 
+![Waveform](timingsimulation.jpg)
 
