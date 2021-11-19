@@ -18,5 +18,5 @@ The reason we assign clocks as this is because we need another rising edge for r
 We use waveform timing simulation to test. Our processor can work properly under 50MHz main clock.
 And the waveform is as below.
 
-![Waveform](timingsimulation.jpg)
+![Waveform](README.assets/timingsimulation.jpg)
 
